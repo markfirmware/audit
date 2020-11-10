@@ -13,7 +13,7 @@ jobs:
     - name: create-snowpack-app
       run: |
         rm -rf app
-        npx create-snowpack-app --template @snowpack/app-template-svelteapp
+        npx create-snowpack-app --template @snowpack/app-template-svelte app
     - name: npm run build
       run:  |
         cd app
