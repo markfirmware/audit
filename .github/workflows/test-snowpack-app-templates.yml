@@ -6,7 +6,20 @@ on:
     - cron: '20 * * * *'
 
 jobs:
-  test:
+  test_svelte:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        rm -rf app
+        npx create-snowpack-app --template @snowpack/app-template-svelteapp
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_svelte_typescript_with_chai:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -19,6 +32,11 @@ jobs:
         cd app
         npm install @types/chai --dev
         npm run build
+
+  test_svelte_typescript:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
     - name: create-snowpack-app
       run: |
         rm -rf app
