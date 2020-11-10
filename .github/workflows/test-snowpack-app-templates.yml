@@ -45,3 +45,29 @@ jobs:
       run:  |
         cd app
         npm run build
+
+  test_vue:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        rm -rf app
+        npx create-snowpack-app --template @snowpack/app-template-vue app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_vue_typescript:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        rm -rf app
+        npx create-snowpack-app --template @snowpack/app-template-vue|typescript app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
