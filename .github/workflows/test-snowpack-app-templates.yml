@@ -6,12 +6,13 @@ on:
     - cron: '20 * * * *'
 
 jobs:
-  npm_run_build:
+  test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: build
+    - name: create-snowpack-app
       run: |
         npx create-snowpack-app --template @snowpack/app-template-svelte-typescript app
         cd app
-        npm run build
+    - name: npm run build
+      run:  npm run build
