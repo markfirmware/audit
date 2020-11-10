@@ -6,7 +6,7 @@ on:
     - cron: '20 * * * *'
 
 jobs:
-  'npm run build':
+  npm_run_build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
