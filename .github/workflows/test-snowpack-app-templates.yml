@@ -19,20 +19,6 @@ jobs:
         cd app
         npm run build
 
-  test_svelte_typescript_with_chai:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: create-snowpack-app
-      run: |
-        rm -rf app
-        npx create-snowpack-app --template @snowpack/app-template-svelte-typescript app
-    - name: npm run build with chai
-      run:  |
-        cd app
-        npm install @types/chai --dev
-        npm run build
-
   test_svelte_typescript:
     runs-on: ubuntu-latest
     steps:
