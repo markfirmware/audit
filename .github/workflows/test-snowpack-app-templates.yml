@@ -6,6 +6,85 @@ on:
     - cron: '20 * * * *'
 
 jobs:
+
+  test_11ty:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        rm -rf app
+        npx create-snowpack-app --template @snowpack/app-template-11ty app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        rm -rf app
+        npx create-snowpack-app --template @snowpack/app-template-lit app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_typescript:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        rm -rf app
+        npx create-snowpack-app --template @snowpack/app-template-blank-typescript app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_lit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        rm -rf app
+        npx create-snowpack-app --template @snowpack/app-template-lit app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_lit_typescript:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        rm -rf app
+        npx create-snowpack-app --template @snowpack/app-template-lit-typescript app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_minimal:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        rm -rf app
+        npx create-snowpack-app --template @snowpack/app-template-minimal app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
   test_preact:
     runs-on: ubuntu-latest
     steps:
