@@ -3,7 +3,7 @@ name: test snowpack templates
 on:
   push:
   schedule:
-    - cron: '20 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
 
@@ -14,18 +14,6 @@ jobs:
     - name: create-snowpack-app
       run: |
         npx create-snowpack-app --template @snowpack/app-template-11ty app
-    - name: npm run build
-      run:  |
-        cd app
-        npm run build
-
-  test_blank:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: create-snowpack-app
-      run: |
-        npx create-snowpack-app --template @snowpack/app-template-blank app
     - name: npm run build
       run:  |
         cd app
@@ -90,19 +78,6 @@ jobs:
       run: |
         rm -rf app
         npx create-snowpack-app --template @snowpack/app-template-preact app
-    - name: npm run build
-      run:  |
-        cd app
-        npm run build
-
-  test_preact_typescript:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: create-snowpack-app
-      run: |
-        rm -rf app
-        npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
     - name: npm run build
       run:  |
         cd app
