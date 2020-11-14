@@ -91,19 +91,6 @@ jobs:
         cd app
         npm run build
 
-  test_preact_typescript:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: create-snowpack-app
-      run: |
-        npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
-    - name: npm run build
-      run:  |
-        cd app
-        npm i chai
-        ../fixed-build.sh
-
   test_react_typescript:
     runs-on: ubuntu-latest
     steps:
