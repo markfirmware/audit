@@ -3,7 +3,7 @@ name: test fix for snowpack blank template
 on:
   push:
   schedule:
-    - cron: '*/2 * * *'
+    - cron: '*/2 * * * *'
 
 jobs:
 
