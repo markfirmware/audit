@@ -3,7 +3,7 @@ name: test snowpack templates
 on:
   push:
   schedule:
-    - cron: '20 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
 
@@ -101,7 +101,7 @@ jobs:
     - name: npm run build
       run:  |
         cd app
-        npm run build
+        ../fixed-build.sh
 
   test_react_typescript:
     runs-on: ubuntu-latest
