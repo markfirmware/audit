@@ -3,7 +3,7 @@ name: test snowpack templates
 on:
   push:
   schedule:
-    - cron: '20 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
 
