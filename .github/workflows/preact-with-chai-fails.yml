@@ -16,6 +16,7 @@ jobs:
         npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
         cd app
         npm i @types/chai
+        echo
     - name: npm run build
       run:  |
         cd app
