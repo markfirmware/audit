@@ -67,18 +67,6 @@ jobs:
         cd app
         npm run build
 
-  test_react:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - name: create-snowpack-app
-      run: |
-        npx create-snowpack-app --template @snowpack/app-template-react app
-    - name: npm run build
-      run:  |
-        cd app
-        npm run build
-
   test_react_typescript:
     runs-on: ubuntu-latest
     steps:
