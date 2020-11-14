@@ -1,0 +1,22 @@
+name: preact-typescript with chai fails
+
+on:
+  push:
+  schedule:
+    - cron: '20 * * * *'
+
+jobs:
+
+  test_preact_typescript_with_chai:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
+        cd app
+        npm i @types/chai
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build

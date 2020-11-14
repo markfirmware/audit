@@ -91,19 +91,13 @@ jobs:
         cd app
         ../npm-run-build.sh
 
-  test_preact_typescript_with_chai:
+  skipped_test_preact_typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: create-snowpack-app
+    - name: skipped
       run: |
-        npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
-        cd app
-        npm i @types/chai
-    - name: npm run build
-      run:  |
-        cd app
-        npm run build
+        echo skipped
 
   test_react:
     runs-on: ubuntu-latest
