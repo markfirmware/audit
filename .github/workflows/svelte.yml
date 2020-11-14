@@ -3,7 +3,7 @@ name: test snowpack svelte template
 on:
   push:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/10 * * * *'
 
 jobs:
 
