@@ -1,2 +1,3 @@
-<a href=https://github.com/markfirmware/audit/actions>actions</a>
-https://github.com/markfirmware/audit/issues/1
+[actions](https://github.com/markfirmware/audit/actions>actions)
+
+[failures](https://github.com/markfirmware/audit/issues/1)
