@@ -3,7 +3,7 @@ name: preact-typescript with chai fails
 on:
   push:
   schedule:
-    - cron: '20 * * * *'
+    - cron: '20 10 * * *'
 
 jobs:
 
