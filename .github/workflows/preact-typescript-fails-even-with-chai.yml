@@ -1,4 +1,4 @@
-name: preact-typescript with chai fails
+name: preact-typescript fails even with chai
 
 on:
   push:
