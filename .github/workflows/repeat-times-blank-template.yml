@@ -1,4 +1,4 @@
-name: 20 times - test snowpack blank template
+name: 100 times - test snowpack blank template
 
 on:
   push:
@@ -127,7 +127,6 @@ jobs:
         cd app
         npm run build
 
-
   test_blank_11:
     runs-on: ubuntu-latest
     steps:
@@ -237,6 +236,973 @@ jobs:
         npm run build
 
   test_blank_20:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+
+  test_blank_21:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_22:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_23:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_24:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_25:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_26:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_27:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_28:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_29:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_30:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_31:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_32:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_33:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_34:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_35:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_36:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_37:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_38:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_39:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_40:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+
+  test_blank_41:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_42:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_43:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_44:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_45:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_46:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_47:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_48:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_49:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_50:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+
+  test_blank_51:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_52:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_53:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_54:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_55:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_56:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_57:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_58:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_59:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_60:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+
+  test_blank_61:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_62:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_63:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_64:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_65:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_66:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_67:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_68:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_69:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_70:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+
+  test_blank_71:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_72:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_73:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_74:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_75:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_76:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_17:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_78:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_79:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_80:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+
+  test_blank_81:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_82:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_83:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_84:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_85:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_86:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_87:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_88:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_89:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_90:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+
+  test_blank_91:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_92:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_93:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_94:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_95:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_96:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_97:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_98:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_99:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_blank_100:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
