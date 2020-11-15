@@ -18,7 +18,7 @@ jobs:
       run: |
         cd app
         npm i @types/chai
-    - name: npm run build - lots of TS2582: Cannot find name
+    - name: npm run build - lots of TS2582 Cannot find name
       run:  |
         echo
         cd app
