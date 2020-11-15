@@ -247,7 +247,6 @@ jobs:
         cd app
         npm run build
 
-
   test_blank_21:
     runs-on: ubuntu-latest
     steps:
@@ -488,7 +487,6 @@ jobs:
         cd app
         npm run build
 
-
   test_blank_41:
     runs-on: ubuntu-latest
     steps:
@@ -608,7 +606,6 @@ jobs:
       run:  |
         cd app
         npm run build
-
 
   test_blank_51:
     runs-on: ubuntu-latest
@@ -730,7 +727,6 @@ jobs:
         cd app
         npm run build
 
-
   test_blank_61:
     runs-on: ubuntu-latest
     steps:
@@ -851,7 +847,6 @@ jobs:
         cd app
         npm run build
 
-
   test_blank_71:
     runs-on: ubuntu-latest
     steps:
@@ -924,7 +919,7 @@ jobs:
         cd app
         npm run build
 
-  test_blank_17:
+  test_blank_77:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -971,7 +966,6 @@ jobs:
       run:  |
         cd app
         npm run build
-
 
   test_blank_81:
     runs-on: ubuntu-latest
@@ -1092,7 +1086,6 @@ jobs:
       run:  |
         cd app
         npm run build
-
 
   test_blank_91:
     runs-on: ubuntu-latest
