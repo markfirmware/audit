@@ -1,3 +1,5 @@
-[actions](https://github.com/markfirmware/audit/actions>actions)
+# [actions](https://github.com/markfirmware/audit/actions)
 
-[failures](https://github.com/markfirmware/audit/issues/1)
+# known problems
+
+- [unuseable npx csa preact-typewcript template](https://github.com/markfirmware/audit/issues/1)
