@@ -1,3 +1,3 @@
-# [confirmed issues](https://github.com/markfirmware/audit/actions)/issues
+# [problems](https://github.com/markfirmware/audit/issues)
 
 # [curated test history](https://github.com/markfirmware/audit/actions)
