@@ -159,7 +159,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  test_vue_typescript:
+  test_vue_typescript_retry_intermittent:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -169,4 +169,4 @@ jobs:
     - name: npm run build
       run:  |
         cd app
-        npm run build
+        ../npm-run-build-retry-intermittent.sh
