@@ -109,7 +109,7 @@ jobs:
     - name: npm run build
       run:  |
         cd app
-        npm run build
+        ../npm-run-build.sh
 
   test_react_typescript:
     runs-on: ubuntu-latest
