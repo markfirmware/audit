@@ -3,7 +3,7 @@ name: test snowpack templates
 on:
   push:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '20 10 * * *'
 
 jobs:
 
@@ -91,7 +91,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  test_preact_typescript_with_chai_and_1_jest:
+  test_preact_typescript_1_with_chai_and_jest:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -111,7 +111,7 @@ jobs:
         cd app
         npm run build
 
-  test_preact_typescript_with_chai_and_2_mocha:
+  test_preact_typescript_2_with_chai_and_mocha:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
