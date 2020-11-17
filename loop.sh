@@ -2,7 +2,7 @@
 set -e
 
 N=$1
-FRAMEWORK=$1
+FRAMEWORK=$2
 
 for i in $(seq 1 $N)
 do
