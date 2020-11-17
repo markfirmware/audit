@@ -1,9 +1,9 @@
-name: preact-typescript fails even with chai
+name: preact-typescript needs jest
 
 on:
   push:
   schedule:
-    - cron: '20 10 * * *'
+    - cron: '10 20 * * *'
 
 jobs:
 
@@ -15,10 +15,6 @@ jobs:
       run: |
         npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
     - name: chai
-      run: |
-        cd app
-        npm i @types/chai
-    - name: jest
       run: |
         cd app
         npm i @types/jest
