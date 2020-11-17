@@ -1,11 +1,14 @@
 #!/bin/bash
 set -e
 
-for i in $(seq 1 20)
+N=$1
+FRAMEWORK=$1
+
+for i in $(seq 1 $N)
 do
   echo $i
   rm -rf app.git
-  npx create-snowpack-app --template @snowpack/app-template-blank app.git
+  npx create-snowpack-app --template @snowpack/app-template-$FRAMEWORK app.git
   pushd app.git
       npm run build
   popd
