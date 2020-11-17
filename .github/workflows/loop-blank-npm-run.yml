@@ -13,4 +13,4 @@ jobs:
     - uses: actions/checkout@v1
     - name: loop csa and npm run build
       run: |
-        ../loop.sh
+        ./loop.sh
