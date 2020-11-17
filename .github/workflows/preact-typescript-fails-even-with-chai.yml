@@ -14,10 +14,14 @@ jobs:
     - name: create-snowpack-app
       run: |
         npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
-    - name: create-snowpack-app
+    - name: chai
       run: |
         cd app
         npm i @types/chai
+    - name: jest
+      run: |
+        cd app
+        npm i @types/jest
     - name: npm run build
       run: |
         cd app
