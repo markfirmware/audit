@@ -1,0 +1,23 @@
+name: 50 times - test snowpack blank template
+
+on:
+  push:
+  schedule:
+    - cron: '20 10 * * *'
+
+jobs:
+
+  blank_01:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-2016]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
