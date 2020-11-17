@@ -5,7 +5,7 @@ function run {
     rm -rf app.git
     npx create-snowpack-app --template @snowpack/app-template-blank app.git
     pushd app.git
-        npm run build |& tee log
+        npm run build
     popd
 }
 
