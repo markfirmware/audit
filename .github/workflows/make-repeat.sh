@@ -24,7 +24,7 @@ do
     ${JOB}:
       strategy:
         matrix:
-          os: [ubuntu-20.04]
+          os: [windows-2016]
       runs-on: \${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
