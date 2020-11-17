@@ -7,12 +7,10 @@ on:
 
 jobs:
 
-  test_blank:
+  test_loop:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: csa then loop npm run build
+    - name: loop csa and npm run build
       run: |
-        npx create-snowpack-app --template @snowpack/app-template-blank app
-        cd app
         ../loop.sh

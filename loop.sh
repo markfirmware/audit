@@ -1,135 +1,101 @@
 #!/bin/bash
 set -e
 
-npx create-snowpack-app --template @snowpack/app-template-blank app.git
+function run {
+    rm -rf app.git
+    npx create-snowpack-app --template @snowpack/app-template-blank app.git
+    pushd app.git
+        npm run build |& tee log
+    popd
+}
 
-pushd app.git
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-    npm run build |& tee log
-popd
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
+run()
