@@ -91,7 +91,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  test_preact_typescript_with_chai_and_jest:
+  test_preact_typescript_with_chai_and_1_jest:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -106,6 +106,26 @@ jobs:
       run:  |
         cd app
         npm i @types/jest
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  test_preact_typescript_with_chai_and_2_mocha:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
+    - name: npm i @types/chai
+      run:  |
+        cd app
+        npm i @types/chai
+    - name: npm i @types/mocha
+      run:  |
+        cd app
+        npm i @types/mocha
     - name: npm run build
       run:  |
         cd app
