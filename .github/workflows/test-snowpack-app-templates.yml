@@ -7,7 +7,7 @@ on:
 
 jobs:
 
-  test_11ty:
+  11ty:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -19,7 +19,7 @@ jobs:
         cd app
         npm run build
 
-  test_blank_retry_intermittent:
+  blank_retry_intermittent:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -31,7 +31,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  test_blank_typescript:
+  blank_typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -43,7 +43,7 @@ jobs:
         cd app
         npm run build
 
-  test_lit_element:
+  lit_element:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -55,7 +55,7 @@ jobs:
         cd app
         npm run build
 
-  test_lit__element_typescript:
+  lit__element_typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -67,7 +67,7 @@ jobs:
         cd app
         npm run build
 
-  test_minimal:
+  minimal:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -79,7 +79,7 @@ jobs:
         cd app
         npm run build
 
-  test_preact_retry_intermittent:
+  preact_retry_intermittent:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -91,7 +91,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  test_preact_typescript_1_with_chai_and_jest:
+  preact_typescript_1_with_chai_and_jest:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -111,7 +111,7 @@ jobs:
         cd app
         npm run build
 
-  test_preact_typescript_2_with_chai_and_mocha:
+  preact_typescript_2_with_chai_and_mocha:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -131,7 +131,7 @@ jobs:
         cd app
         npm run build
 
-  test_react_retry_intermittent:
+  react_retry_intermittent:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -143,7 +143,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  test_react_typescript:
+  react_typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -155,7 +155,7 @@ jobs:
         cd app
         npm run build
 
-  test_svelte_retry_intermittent:
+  svelte_retry_intermittent:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -167,7 +167,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  test_svelte_typescript:
+  svelte_typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -179,7 +179,7 @@ jobs:
         cd app
         npm run build
 
-  test_vue_retry_intermittent:
+  vue_retry_intermittent:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -191,7 +191,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  test_vue_typescript_retry_intermittent:
+  vue_typescript_retry_intermittent:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
