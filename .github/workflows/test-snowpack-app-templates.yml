@@ -1,0 +1,180 @@
+name: test snowpack templates
+
+on:
+  push:
+  schedule:
+    - cron: '20 10 * * *'
+
+jobs:
+
+  _11ty:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-11ty app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  blank_retry_intermittent:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank app
+    - name: npm run build
+      run:  |
+        cd app
+        ../npm-run-build-retry-intermittent.sh
+
+  blank_typescript:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-blank-typescript app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  lit_element:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-lit-element app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  lit__element_typescript:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-lit-element-typescript app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  minimal:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-minimal app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  preact_retry_intermittent:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-preact app
+    - name: npm run build
+      run:  |
+        cd app
+        ../npm-run-build-retry-intermittent.sh
+
+  preact_typescript_with_jest:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
+    - name: npm i @types/jest
+      run:  |
+        cd app
+        npm i @types/jest
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  react_retry_intermittent:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-react app
+    - name: npm run build
+      run:  |
+        cd app
+        ../npm-run-build-retry-intermittent.sh
+
+  react_typescript:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-react-typescript app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  svelte_retry_intermittent:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-svelte app
+    - name: npm run build
+      run:  |
+        cd app
+        ../npm-run-build-retry-intermittent.sh
+
+  svelte_typescript:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-svelte-typescript app
+    - name: npm run build
+      run:  |
+        cd app
+        npm run build
+
+  vue_retry_intermittent:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-vue app
+    - name: npm run build
+      run:  |
+        cd app
+        ../npm-run-build-retry-intermittent.sh
+
+  vue_typescript_retry_intermittent:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: create-snowpack-app
+      run: |
+        npx create-snowpack-app --template @snowpack/app-template-vue-typescript app
+    - name: npm run build
+      run:  |
+        cd app
+        ../npm-run-build-retry-intermittent.sh
