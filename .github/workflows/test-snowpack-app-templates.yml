@@ -99,9 +99,9 @@ jobs:
       run: |
         npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
         cd app
-        npm i @types/jest
         npm run build
-
+        npm i @types/chai
+        npm i @types/jest
   react_retry_intermittent:
     runs-on: ubuntu-latest
     steps:
