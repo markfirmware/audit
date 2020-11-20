@@ -11,7 +11,7 @@ jobs:
     blank_1:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -26,7 +26,7 @@ jobs:
     blank_2:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -41,7 +41,7 @@ jobs:
     blank_3:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -56,7 +56,7 @@ jobs:
     blank_4:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -71,7 +71,7 @@ jobs:
     blank_5:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -86,7 +86,7 @@ jobs:
     blank_6:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -101,7 +101,7 @@ jobs:
     blank_7:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -116,7 +116,7 @@ jobs:
     blank_8:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -131,7 +131,7 @@ jobs:
     blank_9:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -146,7 +146,7 @@ jobs:
     blank_10:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -161,7 +161,7 @@ jobs:
     blank_11:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -176,7 +176,7 @@ jobs:
     blank_12:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -191,7 +191,7 @@ jobs:
     blank_13:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -206,7 +206,7 @@ jobs:
     blank_14:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -221,7 +221,7 @@ jobs:
     blank_15:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -236,7 +236,7 @@ jobs:
     blank_16:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -251,7 +251,7 @@ jobs:
     blank_17:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -266,7 +266,7 @@ jobs:
     blank_18:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -281,7 +281,7 @@ jobs:
     blank_19:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -296,7 +296,7 @@ jobs:
     blank_20:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -311,7 +311,7 @@ jobs:
     blank_21:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -326,7 +326,7 @@ jobs:
     blank_22:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -341,7 +341,7 @@ jobs:
     blank_23:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -356,7 +356,7 @@ jobs:
     blank_24:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -371,7 +371,7 @@ jobs:
     blank_25:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -386,7 +386,7 @@ jobs:
     blank_26:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -401,7 +401,7 @@ jobs:
     blank_27:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -416,7 +416,7 @@ jobs:
     blank_28:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -431,7 +431,7 @@ jobs:
     blank_29:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -446,7 +446,7 @@ jobs:
     blank_30:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -461,7 +461,7 @@ jobs:
     blank_31:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -476,7 +476,7 @@ jobs:
     blank_32:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -491,7 +491,7 @@ jobs:
     blank_33:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -506,7 +506,7 @@ jobs:
     blank_34:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -521,7 +521,7 @@ jobs:
     blank_35:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -536,7 +536,7 @@ jobs:
     blank_36:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -551,7 +551,7 @@ jobs:
     blank_37:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -566,7 +566,7 @@ jobs:
     blank_38:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -581,7 +581,7 @@ jobs:
     blank_39:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -596,7 +596,7 @@ jobs:
     blank_40:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -611,7 +611,7 @@ jobs:
     blank_41:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -626,7 +626,7 @@ jobs:
     blank_42:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -641,7 +641,7 @@ jobs:
     blank_43:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -656,7 +656,7 @@ jobs:
     blank_44:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -671,7 +671,7 @@ jobs:
     blank_45:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -686,7 +686,7 @@ jobs:
     blank_46:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -701,7 +701,7 @@ jobs:
     blank_47:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -716,7 +716,7 @@ jobs:
     blank_48:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -731,7 +731,7 @@ jobs:
     blank_49:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -746,7 +746,7 @@ jobs:
     blank_50:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -761,7 +761,7 @@ jobs:
     blank_51:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -776,7 +776,7 @@ jobs:
     blank_52:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -791,7 +791,7 @@ jobs:
     blank_53:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -806,7 +806,7 @@ jobs:
     blank_54:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -821,7 +821,7 @@ jobs:
     blank_55:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -836,7 +836,7 @@ jobs:
     blank_56:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -851,7 +851,7 @@ jobs:
     blank_57:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -866,7 +866,7 @@ jobs:
     blank_58:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -881,7 +881,7 @@ jobs:
     blank_59:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -896,7 +896,7 @@ jobs:
     blank_60:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -911,7 +911,7 @@ jobs:
     blank_61:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -926,7 +926,7 @@ jobs:
     blank_62:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -941,7 +941,7 @@ jobs:
     blank_63:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -956,7 +956,7 @@ jobs:
     blank_64:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -971,7 +971,7 @@ jobs:
     blank_65:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -986,7 +986,7 @@ jobs:
     blank_66:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1001,7 +1001,7 @@ jobs:
     blank_67:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1016,7 +1016,7 @@ jobs:
     blank_68:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1031,7 +1031,7 @@ jobs:
     blank_69:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1046,7 +1046,7 @@ jobs:
     blank_70:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1061,7 +1061,7 @@ jobs:
     blank_71:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1076,7 +1076,7 @@ jobs:
     blank_72:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1091,7 +1091,7 @@ jobs:
     blank_73:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1106,7 +1106,7 @@ jobs:
     blank_74:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1121,7 +1121,7 @@ jobs:
     blank_75:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1136,7 +1136,7 @@ jobs:
     blank_76:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1151,7 +1151,7 @@ jobs:
     blank_77:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1166,7 +1166,7 @@ jobs:
     blank_78:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1181,7 +1181,7 @@ jobs:
     blank_79:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1196,7 +1196,7 @@ jobs:
     blank_80:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1211,7 +1211,7 @@ jobs:
     blank_81:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1226,7 +1226,7 @@ jobs:
     blank_82:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1241,7 +1241,7 @@ jobs:
     blank_83:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1256,7 +1256,7 @@ jobs:
     blank_84:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1271,7 +1271,7 @@ jobs:
     blank_85:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1286,7 +1286,7 @@ jobs:
     blank_86:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1301,7 +1301,7 @@ jobs:
     blank_87:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1316,7 +1316,7 @@ jobs:
     blank_88:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1331,7 +1331,7 @@ jobs:
     blank_89:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1346,7 +1346,7 @@ jobs:
     blank_90:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1361,7 +1361,7 @@ jobs:
     blank_91:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1376,7 +1376,7 @@ jobs:
     blank_92:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1391,7 +1391,7 @@ jobs:
     blank_93:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1406,7 +1406,7 @@ jobs:
     blank_94:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1421,7 +1421,7 @@ jobs:
     blank_95:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1436,7 +1436,7 @@ jobs:
     blank_96:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1451,7 +1451,7 @@ jobs:
     blank_97:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1466,7 +1466,7 @@ jobs:
     blank_98:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1481,7 +1481,7 @@ jobs:
     blank_99:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
@@ -1496,7 +1496,7 @@ jobs:
     blank_100:
       strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-20.04]
       runs-on: ${{ matrix.os }}
       steps:
         - uses: actions/checkout@v1
