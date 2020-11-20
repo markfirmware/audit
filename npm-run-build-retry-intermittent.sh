@@ -27,7 +27,7 @@ do
         cat npm-run-build.log | sed 1,/index.html/d | sed /npm.ERR!.code.ELIFECYCLE/,\$d > error.log
         echo diff error.log intermittent-error.log
         diff error.log intermittent-error.log
-        if [[ $ok == 0 ]]
+        if [[ $? == 0 ]]
         then
             echo
 	    echo retry intermittent error ...
