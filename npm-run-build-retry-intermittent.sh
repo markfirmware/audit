@@ -1,9 +1,9 @@
 #!/bin/bash
 set -x
 
-ok=1
-if [[ $ok != 0 ]]
-do
+#   ok=1
+#   while [[ $ok != 0 ]]
+#   do
     npm run build >& npm.run.build.log
     ok=$?
     if [[ $ok != 0 ]]
@@ -12,4 +12,4 @@ do
         cat error.log
         exit 1
     fi
-done
+#   done
