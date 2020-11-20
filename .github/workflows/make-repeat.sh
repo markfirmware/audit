@@ -34,6 +34,6 @@ do
         - name: npm run build
           run:  |
             cd app
-            npm run build
+            npm-run-build-retry-intermittent.sh
 __EOF__
 done
