@@ -7,7 +7,7 @@
     ok=$?
     if [[ $ok != 0 ]]
     then
-        cat npm.run.build.log | sed 1,/TypeError:/d | sed /npm.ERR!.code.ELIFECYCLE/,\$d > error.log
+        cat npm.run.build.log | sed 1,/index.html/d | sed /npm.ERR!.code.ELIFECYCLE/,\$d > error.log
         echo error.log ...................................................
         cat error.log
         echo error.log ...................................................
