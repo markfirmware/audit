@@ -1,0 +1,384 @@
+name: 25 times - test snowpack blank template
+
+on:
+  push:
+  schedule:
+    - cron: '20 10 * * *'
+
+jobs:
+
+
+    blank_1:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_2:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_3:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_4:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_5:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_6:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_7:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_8:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_9:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_10:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_11:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_12:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_13:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_14:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_15:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_16:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_17:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_18:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_19:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_20:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_21:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_22:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_23:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_24:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
+
+    blank_25:
+      strategy:
+        matrix:
+          os: [ubuntu-20.04]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            ../npm-run-build-retry-intermittent.sh
