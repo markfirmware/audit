@@ -29,9 +29,11 @@ do
         diff error.log intermittent-error.log
         if [[ $ok == 0 ]]
         then
+            echo
 	    echo retry intermittent error ...
+        else
+            cat npm-run-build.log
+            exit 1
 	fi
-        cat npm-run-build.log
-        exit 1
     fi
 done
