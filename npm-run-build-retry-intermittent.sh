@@ -2,7 +2,7 @@
 set -x
 
 ok=1
-while [[ $ok != 0 ]]
+if [[ $ok != 0 ]]
 do
     npm run build >& npm.run.build.log
     ok=$?
@@ -10,5 +10,6 @@ do
     then
         cat raw | sed 1,/npx:.installed/d | sed s/.*Z// | sed /added/d > error.log
         cat error.log
+        exit 1
     fi
 done
