@@ -17,11 +17,11 @@ __EOF__
 #   ok=1
 #   while [[ $ok != 0 ]]
 #   do
-    npm run build >& npm.run.build.log
+    npm run build >& npm-run-build.log
     ok=$?
     if [[ $ok != 0 ]]
     then
-        cat npm.run.build.log | sed 1,/index.html/d | sed /npm.ERR!.code.ELIFECYCLE/,\$d > error.log
+        cat npm.run.build.log | sed 1,/index.html/+1d | sed /npm.ERR!.code.ELIFECYCLE/-1,\$d > error.log
         diff error.log intermittent-error.log
         if [[ $ok == 0 ]]
         then
