@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 cat << __EOF__ > intermittent-error.log
 
