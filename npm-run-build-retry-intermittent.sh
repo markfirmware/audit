@@ -7,8 +7,10 @@
     ok=$?
     if [[ $ok != 0 ]]
     then
+        echo npm.run.build.log #########
         cat npm.run.build.log
         cat npm.run.build.log | sed 1,/npx:.installed/d | sed s/.*Z// | sed /added/d > error.log
+        echo error.log #################
         cat error.log
         exit 1
     fi
