@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 #   ok=1
 #   while [[ $ok != 0 ]]
@@ -8,7 +7,7 @@ set -x
     ok=$?
     if [[ $ok != 0 ]]
     then
-        cat raw | sed 1,/npx:.installed/d | sed s/.*Z// | sed /added/d > error.log
+        cat npm.run.build.log | sed 1,/npx:.installed/d | sed s/.*Z// | sed /added/d > error.log
         cat error.log
         exit 1
     fi
