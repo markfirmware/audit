@@ -13,17 +13,18 @@ TypeError: undefined is not a function
     at installDependencies (/home/runner/work/audit/audit/app/node_modules/snowpack/lib/commands/build.js:327:37)
     at Object.command (/home/runner/work/audit/audit/app/node_modules/snowpack/lib/commands/build.js:381:31)
     at async cli (/home/runner/work/audit/audit/app/node_modules/snowpack/lib/index.js:157:9)
-x
+
 __EOF__
 
-#   ok=1
-#   while [[ $ok != 0 ]]
-#   do
+ok=1
+while [[ $ok != 0 ]]
+do
     npm run build >& npm-run-build.log
     ok=$?
     if [[ $ok != 0 ]]
     then
         cat npm-run-build.log | sed 1,/index.html/d | sed /npm.ERR!.code.ELIFECYCLE/,\$d > error.log
+        echo diff error.log intermittent-error.log
         diff error.log intermittent-error.log
         if [[ $ok == 0 ]]
         then
@@ -32,4 +33,4 @@ __EOF__
         cat npm-run-build.log
         exit 1
     fi
-#   done
+done
