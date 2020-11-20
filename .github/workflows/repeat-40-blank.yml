@@ -1,0 +1,609 @@
+name: 40 times - test snowpack blank template
+
+on:
+  push:
+  schedule:
+    - cron: '20 10 * * *'
+
+jobs:
+
+
+    blank_1:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_2:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_3:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_4:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_5:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_6:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_7:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_8:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_9:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_10:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_11:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_12:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_13:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_14:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_15:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_16:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_17:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_18:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_19:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_20:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_21:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_22:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_23:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_24:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_25:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_26:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_27:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_28:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_29:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_30:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_31:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_32:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_33:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_34:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_35:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_36:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_37:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_38:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_39:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
+
+    blank_40:
+      strategy:
+        matrix:
+          os: [windows-2016]
+      runs-on: ${{ matrix.os }}
+      steps:
+        - uses: actions/checkout@v1
+        - name: create-snowpack-app
+          run: |
+            npx create-snowpack-app --template @snowpack/app-template-blank app
+        - name: npm run build
+          run:  |
+            cd app
+            npm run build
