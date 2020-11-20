@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cat << __EOF__ > intermittent-error.log
+
 TypeError: undefined is not a function
     at parseJsForInstallTargets (/home/runner/work/audit/audit/app/node_modules/snowpack/lib/scan-imports.js:114:19)
     at parseFileForInstallTargets (/home/runner/work/audit/audit/app/node_modules/snowpack/lib/scan-imports.js:150:24)
@@ -12,6 +13,7 @@ TypeError: undefined is not a function
     at installDependencies (/home/runner/work/audit/audit/app/node_modules/snowpack/lib/commands/build.js:327:37)
     at Object.command (/home/runner/work/audit/audit/app/node_modules/snowpack/lib/commands/build.js:381:31)
     at async cli (/home/runner/work/audit/audit/app/node_modules/snowpack/lib/index.js:157:9)
+
 __EOF__
 
 #   ok=1
@@ -21,7 +23,7 @@ __EOF__
     ok=$?
     if [[ $ok != 0 ]]
     then
-        cat npm.run.build.log | sed 1,/index.html/+1d | sed /npm.ERR!.code.ELIFECYCLE/-1,\$d > error.log
+        cat npm.run.build.log | sed 1,/index.html/d | sed /npm.ERR!.code.ELIFECYCLE/,\$d > error.log
         diff error.log intermittent-error.log
         if [[ $ok == 0 ]]
         then
