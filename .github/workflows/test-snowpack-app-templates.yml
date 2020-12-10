@@ -31,7 +31,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  blank_typescript:
+  blank-typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -43,7 +43,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  lit_element:
+  lit-element:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -53,9 +53,9 @@ jobs:
     - name: npm run build
       run:  |
         cd app
-        npm run build
+        ../npm-run-build-retry-intermittent.sh
 
-  lit__element_typescript:
+  lit-element-typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -91,7 +91,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  preact_typescript:
+  preact-typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -101,9 +101,10 @@ jobs:
         cd app
     - name: npm run build
       run: |
+        cd app
         ../npm-run-build-retry-intermittent.sh
 
-  react_retry_intermittent:
+  react:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -115,7 +116,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  react_typescript:
+  react-typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -139,7 +140,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  svelte_typescript:
+  svelte-typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -147,7 +148,7 @@ jobs:
       run: |
         npx create-snowpack-app --template @snowpack/app-template-svelte-typescript app
     - name: npm run build
-      run:  |
+      run: |
         cd app
         ../npm-run-build-retry-intermittent.sh
 
@@ -163,7 +164,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  vue_typescript:
+  vue-typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
