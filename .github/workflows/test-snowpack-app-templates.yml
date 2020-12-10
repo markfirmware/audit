@@ -17,9 +17,9 @@ jobs:
     - name: npm run build
       run:  |
         cd app
-        npm run build
+        ../npm-run-build-retry-intermittent.sh
 
-  blank_retry_intermittent:
+  blank:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -41,7 +41,7 @@ jobs:
     - name: npm run build
       run:  |
         cd app
-        npm run build
+        ../npm-run-build-retry-intermittent.sh
 
   lit_element:
     runs-on: ubuntu-latest
@@ -65,7 +65,7 @@ jobs:
     - name: npm run build
       run:  |
         cd app
-        npm run build
+        ../npm-run-build-retry-intermittent.sh
 
   minimal:
     runs-on: ubuntu-latest
@@ -77,9 +77,9 @@ jobs:
     - name: npm run build
       run:  |
         cd app
-        npm run build
+        ../npm-run-build-retry-intermittent.sh
 
-  preact_retry_intermittent:
+  preact:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -91,7 +91,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  preact_typescript_with_jest:
+  preact_typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -99,11 +99,9 @@ jobs:
       run: |
         npx create-snowpack-app --template @snowpack/app-template-preact-typescript app
         cd app
-        npm i chai
-        npm i jest
     - name: npm run build
       run: |
-        npm run build
+        ../npm-run-build-retry-intermittent.sh
 
   react_retry_intermittent:
     runs-on: ubuntu-latest
@@ -127,9 +125,9 @@ jobs:
     - name: npm run build
       run:  |
         cd app
-        npm run build
+        ../npm-run-build-retry-intermittent.sh
 
-  svelte_retry_intermittent:
+  svelte:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -151,9 +149,9 @@ jobs:
     - name: npm run build
       run:  |
         cd app
-        npm run build
+        ../npm-run-build-retry-intermittent.sh
 
-  vue_retry_intermittent:
+  vue:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
@@ -165,7 +163,7 @@ jobs:
         cd app
         ../npm-run-build-retry-intermittent.sh
 
-  vue_typescript_retry_intermittent:
+  vue_typescript:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
