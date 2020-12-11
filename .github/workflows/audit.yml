@@ -9,7 +9,7 @@ jobs:
   npm-run-build-templates:
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, win-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest]
         template: [11ty, blank, lit-element, minimal, preact, react, svelte, vue]
     runs-on: ${{matrix.os}}
     steps:
