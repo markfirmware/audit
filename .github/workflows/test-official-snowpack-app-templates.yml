@@ -1,4 +1,4 @@
-name: test snowpack templates
+name: test official snowpack templates
 
 on:
   push:
