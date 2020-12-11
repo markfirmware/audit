@@ -1,6 +1,7 @@
 name: continuous audit
 
 on:
+  push:
   schedule:
     - cron: '*/30 * * * *'
 
