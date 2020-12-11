@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        template: [preact]
+        template: [preact, svelte, vue]
     runs-on: ${{matrix.os}}
     steps:
       - uses: actions/checkout@v1
