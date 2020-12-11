@@ -9,13 +9,13 @@ jobs:
   npm-run-build-templates:
     strategy:
       matrix:
-        os: [ubuntu-latest, win-latest, macos-latest]
-        template: [preact, preact-typescript]
-    runs-on: ${{ matrix.os }}
+        os: [ubuntu-latest]
+        template: [preact]
+    runs-on: ${{matrix.os}}
     steps:
       - uses: actions/checkout@v1
       - name: create-snowpack-app
         run: |
-          npx create-snowpack-app --template @snowpack/app-template-${{ matrix.template }} app
+          npx create-snowpack-app --template @snowpack/app-template-${{matrix.template}} app
           cd app
           npm-run-build-retry-intermittent.sh
