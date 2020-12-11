@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        template: [11ty, blank, lit-element, minimal, preact, react, svelte, vue]
+        template: [11ty, blank, blank-typescript, lit-element, lit-element-typescript, minimal, preact, react, react-typescript, svelte, svelte-typescript, vue, vue-typescript]
     runs-on: ${{matrix.os}}
     steps:
       - uses: actions/checkout@v1
