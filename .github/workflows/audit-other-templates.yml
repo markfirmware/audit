@@ -1,0 +1,21 @@
+name: test other snowpack templates
+
+on:
+  push:
+  schedule:
+    - cron: '20 */3 * * *'
+
+jobs:
+  npm-run-build-templates:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        template: [snowpack-app-template-preact-hmr-tailwind, snowpack-react-tailwind, snowpack-svelte-ts-tw]
+    runs-on: ${{matrix.os}}
+    steps:
+      - uses: actions/checkout@v1
+      - name: create-snowpack-app
+        run: |
+          npx create-snowpack-app --template ${{matrix.template}} app
+          cd app
+          ../.github/workflows/npm-run-build-retry-intermittent.sh
