@@ -18,4 +18,4 @@ jobs:
         run: |
           npx create-snowpack-app --template @snowpack/app-template-${{matrix.template}} app
           cd app
-          ../npm-run-build-retry-intermittent.sh
+          ../.github/workflows/npm-run-build-retry-intermittent.sh
