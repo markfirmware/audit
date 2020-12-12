@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# npm run build, but retry if a known problem is detected (occurring only in github actiins)
 cat << __EOF__ > intermittent-error.log
 
 TypeError: undefined is not a function
