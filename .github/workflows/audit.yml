@@ -13,7 +13,7 @@ jobs:
         template: [11ty, blank, blank-typescript, lit-element, lit-element-typescript, minimal, preact, preact-typescript, react, react-typescript, svelte, svelte-typescript, vue, vue-typescript]
     runs-on: ${{matrix.os}}
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: create-snowpack-app
         run: |
           npx create-snowpack-app --template @snowpack/app-template-${{matrix.template}} app
