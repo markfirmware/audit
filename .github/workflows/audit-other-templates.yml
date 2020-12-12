@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest, ubuntu-latest, windows-latest]
-        template: [snowpack-app-template-preact-hmr-tailwind, snowpack-react-tailwind, snowpack-svelte-ts-tw]
+        template: [snowpack-svelte-ts-tw]
     runs-on: ${{matrix.os}}
     steps:
       - uses: actions/checkout@v1
