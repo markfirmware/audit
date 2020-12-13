@@ -9,8 +9,8 @@ jobs:
   npm-run-build-templates:
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
         template: [11ty, blank, blank-typescript, lit-element, lit-element-typescript, minimal, preact, preact-typescript, react, react-typescript, svelte, svelte-typescript, vue, vue-typescript]
+        os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{matrix.os}}
     steps:
       - uses: actions/checkout@v2
