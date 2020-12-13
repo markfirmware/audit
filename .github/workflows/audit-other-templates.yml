@@ -9,8 +9,8 @@ jobs:
   npm-run-build-templates:
     strategy:
       matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
         template: [snowpack-react-tailwind, snowpack-svelte-ts-tw]
+        os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{matrix.os}}
     steps:
       - uses: actions/checkout@v2
