@@ -1,0 +1,28 @@
+name: confirm issue 1708
+
+on:
+  push:
+  schedule:
+    - cron: '15 */3 * * *'
+
+jobs:
+  npm-run-build-templates:
+    strategy:
+      matrix:
+        template: [blank]
+        os: [ubuntu-latest]
+    runs-on: ${{matrix.os}}
+    steps:
+      - uses: actions/checkout@v2
+      - name: create-snowpack-app
+        run: |
+          for i in $(seq 1 100)
+          do
+            echo $i
+            rm -rf app.git
+            npx create-snowpack-app --template @snowpack/app-template-blank app.git
+            pushd app.git
+              npm run build
+            popd
+          done
+
