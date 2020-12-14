@@ -52,7 +52,8 @@ jobs:
           # "@carv/snowpack-scripts-svelte",
           # "@hisystems/snowpack-app-scripts-svelte",
           "svelvet",
-          # "@jakedeichert/svelvet"]
+          # "@jakedeichert/svelvet"
+          ]
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{matrix.os}}
     steps:
