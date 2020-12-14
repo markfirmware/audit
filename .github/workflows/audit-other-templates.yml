@@ -12,9 +12,9 @@ jobs:
         template: [snowpack-react-tailwind,
           snowpack-svelte-ts-tw,
           snowpack-template-tailwind,
-          snowpack-app-template-preact-hmr-tailwind,
-          @joshnuss/svelte-snowpack-template,
-          @idangazit/snowbank,
+          # snowpack-app-template-preact-hmr-tailwind,
+          '@joshnuss/svelte-snowpack-template',
+          '@idangazit/snowbank',
           svelte-tailwind-snowpack,
           snowpack-react-tailwind]
         os: [macos-latest, ubuntu-latest, windows-latest]
