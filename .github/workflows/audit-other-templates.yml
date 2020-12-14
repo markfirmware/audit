@@ -42,7 +42,6 @@ jobs:
           # "@hisystems/snowpack-app-template-svelte",
           # "@hisystems/snowpack-app-template-svelte-typescript",
           "snowpack-plugin-mdsvex",
-          "@snowpack/plugin-postcss",
           "svelte-tailwind-snowpack",
           "svelte-html-asset-preprocessor",
           # "@hisystems/snowpack-plugin-svelte",
