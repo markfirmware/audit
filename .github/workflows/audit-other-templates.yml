@@ -23,7 +23,7 @@ jobs:
           "@snowpack/app-template-svelte-typescript",
           # "@hisystems/snowpack-app-template-svelte",
           # "@hisystems/snowpack-app-template-svelte-typescript",
-          # "@snowpack/plugin-postcss",
+          "@snowpack/plugin-postcss",
           # "@hisystems/snowpack-plugin-svelte",
           # "@hisystems/snowpack-plugin-postcss",
           # "@snowpack/app-scripts-svelte",
@@ -39,11 +39,9 @@ jobs:
           # "@hisystems/snowpack-app-template-svelte-typescript",
           "svelte-tailwind-snowpack",
           # "@snowpack/app-scripts-svelte",
-          # "@vaishnavsm/snowpack-svelte-conf",
-          # "svelt3",
+          "svelt3",
           # "@carv/snowpack-scripts-svelte",
           # "@hisystems/snowpack-app-scripts-svelte",
-          # "svelvet",
           # "@jakedeichert/svelvet"
           ]
         os: [ubuntu-latest]
