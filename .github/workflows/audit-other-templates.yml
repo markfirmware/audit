@@ -31,7 +31,7 @@ jobs:
           # "@hisystems/snowpack-plugin-svelte",
           # "@hisystems/snowpack-plugin-postcss",
           # "@snowpack/app-scripts-svelte",
-          "@vaishnavsm/snowpack-svelte-conf",
+          # "@vaishnavsm/snowpack-svelte-conf",
           # "svelt3",
           # "@carv/snowpack-scripts-svelte",
           # "@hisystems/snowpack-app-scripts-svelte",
