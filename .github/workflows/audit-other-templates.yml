@@ -3,7 +3,7 @@ name: test other snowpack templates
 on:
   push:
   schedule:
-    - cron: '15 3 */1 * *'
+    - cron: '15 */1 * * *'
 
 jobs:
   npm-run-build-templates:
@@ -17,7 +17,46 @@ jobs:
           # '@joshnuss/svelte-snowpack-template',
           '@idangazit/snowbank',
           svelte-tailwind-snowpack,
-          snowpack-react-tailwind]
+          snowpack-react-tailwind,
+          "@snowpack/plugin-svelte",
+          "@snowpack/app-template-svelte",
+          "@snowpack/app-template-svelte-typescript",
+          "@hisystems/snowpack-app-template-svelte",
+          "@hisystems/snowpack-app-template-svelte-typescript",
+          "snowpack-plugin-mdsvex",
+          "@snowpack/plugin-postcss",
+          "svelte-html-asset-preprocessor",
+          "svelte-tailwind-snowpack",
+          "snowpack-svelte-ts-tw",
+          "@hisystems/snowpack-plugin-svelte",
+          "@hisystems/snowpack-plugin-postcss",
+          "@snowpack/app-scripts-svelte",
+          "@vaishnavsm/snowpack-svelte-conf",
+          "svelt3",
+          "@carv/snowpack-scripts-svelte",
+          "@hisystems/snowpack-app-scripts-svelte",
+          "svelvet",
+          "@jakedeichert/svelvet",
+          "@snowpack/plugin-svelte",
+          "@snowpack/app-template-svelte",
+          "@snowpack/app-template-svelte-typescript",
+          "@hisystems/snowpack-app-template-svelte",
+          "@hisystems/snowpack-app-template-svelte-typescript",
+          "@joshnuss/svelte-snowpack-template",
+          "snowpack-plugin-mdsvex",
+          "@snowpack/plugin-postcss",
+          "svelte-tailwind-snowpack",
+          "svelte-html-asset-preprocessor",
+          "snowpack-svelte-ts-tw",
+          "@hisystems/snowpack-plugin-svelte",
+          "@hisystems/snowpack-plugin-postcss",
+          "@snowpack/app-scripts-svelte",
+          "@vaishnavsm/snowpack-svelte-conf",
+          "svelt3",
+          "@carv/snowpack-scripts-svelte",
+          "@hisystems/snowpack-app-scripts-svelte",
+          "svelvet",
+          "@jakedeichert/svelvet"]
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{matrix.os}}
     steps:
