@@ -3,7 +3,7 @@ name: continuous audit
 on:
   push:
   schedule:
-    - cron: '*/8 * * * *'
+    - cron: '15 * * * *'
 
 jobs:
   npm-run-build-templates:
