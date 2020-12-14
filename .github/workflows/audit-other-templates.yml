@@ -43,7 +43,7 @@ jobs:
           "svelte-tailwind-snowpack",
           "svelte-html-asset-preprocessor",
           # "@snowpack/app-scripts-svelte",
-          "@vaishnavsm/snowpack-svelte-conf",
+          # "@vaishnavsm/snowpack-svelte-conf",
           "svelt3",
           # "@carv/snowpack-scripts-svelte",
           # "@hisystems/snowpack-app-scripts-svelte",
