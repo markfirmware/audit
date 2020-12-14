@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-templates=$(npm search --json keywords:csa-template | jq '.[] | .name' | sort)
+templates=$(npm search --json --searchlimit 100 keywords:csa-template | jq '.[] | .name' | sort)
 for template in $templates
 do
     rm -rf app
