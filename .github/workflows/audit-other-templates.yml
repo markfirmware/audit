@@ -24,7 +24,7 @@ jobs:
           # "@hisystems/snowpack-app-template-svelte",
           # "@hisystems/snowpack-app-template-svelte-typescript",
           # "@snowpack/plugin-postcss",
-          "@hisystems/snowpack-plugin-svelte",
+          # "@hisystems/snowpack-plugin-svelte",
           # "@hisystems/snowpack-plugin-postcss",
           # "@snowpack/app-scripts-svelte",
           # "@vaishnavsm/snowpack-svelte-conf",
