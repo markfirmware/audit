@@ -6,7 +6,7 @@ do
     rm -rf app
     echo $template
     npx create-snowpack-app --template $template app
-    pushd app
+    pushd app > /dev/null
         npm run build
-    popd
+    popd > /dev/null
 done
