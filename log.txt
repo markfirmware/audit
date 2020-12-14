@@ -1,0 +1,3197 @@
+template "app-template-reason-react"
+npx: installed 29 in 1.967s
+
+  - Using template app-template-reason-react
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js@3.8.1 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> bs-platform@8.4.2 postinstall /workspace/audit/app/node_modules/bs-platform
+> node scripts/install.js
+
+ninja binary is already cached and installed:  /workspace/audit/app/node_modules/bs-platform/linux/ninja.exe
+checkoutput: BuckleScript 8.4.2 ( Using OCaml:4.06.1+BS )
+ ocaml version 4.06.1+BS
+Prebuilt compiler works good
+added 923 packages from 467 contributors and audited 927 packages in 21.462s
+
+51 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[bsb] Dependency on reason-react
+[bsb] bsb: [1/56] src/React.ast
+[bsb] bsb: [2/56] src/ReactEvent.ast
+[bsb] bsb: [3/56] src/ReactDOMServer.ast
+[bsb] bsb: [4/56] src/ReactTestUtils.ast
+[bsb] bsb: [5/56] src/ReactEvent.iast
+[bsb] bsb: [6/56] src/ReactDOMStyle.ast
+[bsb] bsb: [7/56] src/ReactTestUtils.iast
+[bsb] bsb: [8/56] src/ReasonReactRouter.ast
+[bsb] bsb: [9/56] src/ReasonReactRouter.iast
+[bsb] bsb: [10/56] src/ReasonReactErrorBoundary.ast
+[bsb] bsb: [11/56] src/ReasonReactErrorBoundary.iast
+[bsb] bsb: [12/56] src/legacy/ReactDOMRe.ast
+[bsb] bsb: [13/56] src/legacy/ReasonReact.iast
+[bsb] bsb: [14/56] src/React.d
+[bsb] bsb: [15/56] src/ReactDOMServer.d
+[bsb] bsb: [16/56] src/legacy/ReactEventRe.ast
+bsb: [17/56] src/legacy/ReactDOMServerRe.ast
+[bsb] bsb: [18/56] src/ReactEvent.d
+[bsb] bsb: [19/56] src/ReactDOMStyle.d
+[bsb] bsb: [20/56] src/ReactTestUtils.d
+[bsb] bsb: [21/56] src/ReasonReactRouter.d
+[bsb] bsb: [22/56] src/ReasonReactErrorBoundary.d
+bsb: [23/56] src/ReactDOM.ast
+[bsb] bsb: [24/56] src/legacy/ReactDOMRe.d
+[bsb] bsb: [25/56] src/legacy/ReactDOMServerRe.d
+[bsb] bsb: [26/56] src/legacy/ReasonReactCompat.ast
+[bsb] bsb: [27/56] src/ReactDOM.d
+[bsb] bsb: [28/56] src/legacy/ReasonReactCompat.iast
+[bsb] bsb: [29/56] src/legacy/ReasonReact.ast
+[bsb] bsb: [30/56] src/legacy/ReasonReactCompat.d
+[bsb] bsb: [31/56] src/ReasonReactRouter.cmi
+[bsb] bsb: [32/56] src/legacy/ReasonReact.d
+[bsb] bsb: [33/56] src/ReactDOMStyle.cmj
+[bsb] bsb: [34/56] src/legacy/ReactEventRe.iast
+[bsb] bsb: [35/56] src/legacy/ReasonReactOptimizedCreateClass.ast
+[bsb] bsb: [36/56] src/ReactEvent.cmi
+[bsb] bsb: [37/56] src/React.cmj
+[bsb] bsb: [38/56] src/legacy/ReactEventRe.d
+[bsb] bsb: [39/56] src/legacy/ReasonReactOptimizedCreateClass.d
+[bsb] bsb: [40/56] src/ReactDOMServer.cmj
+[bsb] bsb: [41/56] src/ReasonReactErrorBoundary.cmi
+[bsb] bsb: [42/56] src/ReactTestUtils.cmi
+[bsb] bsb: [43/56] src/legacy/ReasonReact.cmi
+[bsb] bsb: [44/56] src/legacy/ReactDOMServerRe.cmj
+[bsb] bsb: [45/56] src/ReactEvent.cmj
+[bsb] bsb: [46/56] src/ReasonReactErrorBoundary.cmj
+[bsb] bsb: [47/56] src/ReasonReactRouter.cmj
+[bsb] bsb: [48/56] src/legacy/ReasonReactCompat.cmi
+[bsb] bsb: [49/56] src/legacy/ReasonReactOptimizedCreateClass.cmj
+[bsb] bsb: [50/56] src/legacy/ReactEventRe.cmi
+[bsb] bsb: [51/56] src/ReactTestUtils.cmj
+[bsb] bsb: [52/56] src/legacy/ReactEventRe.cmj
+[bsb] bsb: [53/56] src/legacy/ReasonReact.cmj
+[bsb] bsb: [54/56] src/legacy/ReasonReactCompat.cmj
+[bsb] bsb: [55/56] src/ReactDOM.cmj
+[bsb] bsb: [56/56] src/legacy/ReactDOMRe.cmj
+[bsb] bsb: [1/71] React.cmi
+[bsb] bsb: [2/71] React.cmj
+[bsb] bsb: [3/71] React.cmt
+[bsb] bsb: [4/71] React.re
+[bsb] bsb: [5/71] ReactDOM.cmi
+[bsb] bsb: [6/71] ReactDOM.cmj
+[bsb] bsb: [7/71] ReactDOM.cmt
+[bsb] bsb: [8/71] ReactDOM.re
+[bsb] bsb: [9/71] ReactEvent.cmi
+[bsb] bsb: [10/71] ReactEvent.cmj
+[bsb] bsb: [11/71] ReactEvent.cmt
+[bsb] bsb: [12/71] ReactEvent.re
+[bsb] bsb: [13/71] ReactEvent.rei
+[bsb] bsb: [14/71] ReactEvent.cmti
+[bsb] bsb: [15/71] ReactDOMStyle.cmi
+[bsb] bsb: [16/71] ReactDOMStyle.cmj
+[bsb] bsb: [17/71] ReactDOMStyle.cmt
+[bsb] bsb: [18/71] ReactDOMStyle.re
+[bsb] bsb: [19/71] ReactDOMServer.cmi
+[bsb] bsb: [20/71] ReactDOMServer.cmj
+[bsb] bsb: [21/71] ReactDOMServer.cmt
+[bsb] bsb: [22/71] ReactDOMServer.re
+[bsb] bsb: [23/71] ReactTestUtils.cmj
+[bsb] bsb: [24/71] ReactTestUtils.cmt
+[bsb] bsb: [25/71] ReactTestUtils.cmi
+[bsb] bsb: [26/71] ReactTestUtils.re
+[bsb] bsb: [27/71] ReactTestUtils.rei
+[bsb] bsb: [28/71] ReactTestUtils.cmti
+[bsb] bsb: [29/71] ReasonReactRouter.cmi
+[bsb] bsb: [30/71] ReasonReactRouter.cmj
+[bsb] bsb: [31/71] ReasonReactRouter.cmt
+[bsb] bsb: [32/71] ReasonReactRouter.re
+[bsb] bsb: [33/71] ReasonReactRouter.cmti
+[bsb] bsb: [34/71] ReasonReactErrorBoundary.cmi
+[bsb] bsb: [35/71] ReasonReactErrorBoundary.cmj
+[bsb] bsb: [36/71] ReasonReactErrorBoundary.cmt
+[bsb] bsb: [37/71] ReasonReactErrorBoundary.re
+[bsb] bsb: [38/71] ReasonReactRouter.rei
+[bsb] bsb: [39/71] ReasonReactErrorBoundary.rei
+[bsb] bsb: [40/71] ReasonReactErrorBoundary.cmti
+[bsb] bsb: [41/71] ReactDOMRe.cmi
+[bsb] bsb: [42/71] ReactDOMRe.cmj
+[bsb] bsb: [43/71] ReactDOMRe.cmt
+[bsb] bsb: [44/71] ReactDOMRe.re
+bsb: [45/71] ReasonReact.cmi
+bsb: [46/71] ReasonReact.cmj
+[bsb] bsb: [47/71] ReasonReact.cmt
+[bsb] bsb: [48/71] ReasonReact.re
+[bsb] bsb: [49/71] ReasonReact.rei
+[bsb] bsb: [50/71] ReasonReact.cmti
+[bsb] bsb: [51/71] ReactEventRe.cmi
+[bsb] bsb: [52/71] ReactEventRe.cmj
+[bsb] bsb: [53/71] ReactEventRe.cmt
+bsb: [54/71] ReactEventRe.re
+bsb: [55/71] ReactEventRe.rei
+bsb: [56/71] ReactEventRe.cmti
+[bsb] bsb: [57/71] ReactDOMServerRe.cmi
+bsb: [58/71] ReactDOMServerRe.cmj
+bsb: [59/71] ReactDOMServerRe.cmt
+bsb: [60/71] ReactDOMServerRe.re
+bsb: [61/71] ReasonReactCompat.cmi
+bsb: [62/71] ReasonReactCompat.cmj
+bsb: [63/71] ReasonReactCompat.cmt
+bsb: [64/71] ReasonReactCompat.re
+bsb: [65/71] ReasonReactCompat.rei
+bsb: [66/71] ReasonReactCompat.cmti
+[bsb] bsb: [67/71] ReasonReactOptimizedCreateClass.cmi
+[bsb] bsb: [68/71] ReasonReactOptimizedCreateClass.cmj
+[bsb] bsb: [69/71] ReasonReactOptimizedCreateClass.cmt
+[bsb] bsb: [70/71] ReasonReactOptimizedCreateClass.re
+[bsb] bsb: [71/71] install.stamp
+[bsb] Dependency on @glennsl/bs-jest
+[bsb] bsb: [1/5] src/jest.iast
+[bsb] bsb: [2/5] src/jest.ast
+[bsb] bsb: [3/5] src/jest.d
+[bsb] bsb: [4/5] src/jest.cmi
+[bsb] bsb: [5/5] src/jest.cmj
+[bsb] bsb: [1/7] jest.cmj
+[bsb] bsb: [2/7] jest.cmi
+[bsb] bsb: [3/7] jest.cmt
+[bsb] bsb: [4/7] jest.ml
+bsb: [5/7] jest.mli
+[bsb] bsb: [6/7] jest.cmti
+[bsb] bsb: [7/7] install.stamp
+[bsb] Dependency on bs-dom-testing-library
+[bsb] bsb: [1/16] src/DomTestingLibrary.ast
+[bsb] bsb: [2/16] src/DomTestingLibrary__Utils.ast
+[bsb] bsb: [3/16] src/DomTestingLibrary__FireEvent.iast
+[bsb] bsb: [4/16] src/DomTestingLibrary__Utils.d
+[bsb] bsb: [5/16] src/DomTestingLibrary.iast
+[bsb] bsb: [6/16] src/DomTestingLibrary.d
+[bsb] bsb: [7/16] src/DomTestingLibrary__Queries.ast
+[bsb] bsb: [8/16] src/DomTestingLibrary__FireEvent.ast
+[bsb] bsb: [9/16] src/DomTestingLibrary__Queries.d
+[bsb] bsb: [10/16] src/DomTestingLibrary__FireEvent.d
+[bsb] bsb: [11/16] src/DomTestingLibrary__Utils.cmj
+[bsb] bsb: [12/16] src/DomTestingLibrary__FireEvent.cmi
+[bsb] bsb: [13/16] src/DomTestingLibrary__Queries.cmj
+[bsb] bsb: [14/16] src/DomTestingLibrary.cmi
+[bsb] bsb: [15/16] src/DomTestingLibrary__FireEvent.cmj
+[bsb] bsb: [16/16] src/DomTestingLibrary.cmj
+[bsb] bsb: [1/21] DomTestingLibrary.cmi
+[bsb] bsb: [2/21] DomTestingLibrary.cmj
+[bsb] bsb: [3/21] DomTestingLibrary.cmt
+[bsb] bsb: [4/21] DomTestingLibrary.re
+bsb: [5/21] DomTestingLibrary.rei
+bsb: [6/21] DomTestingLibrary.cmti
+bsb: [7/21] DomTestingLibrary__Utils.cmi
+bsb: [8/21] DomTestingLibrary__Utils.cmj
+bsb: [9/21] DomTestingLibrary__Utils.cmt
+bsb: [10/21] DomTestingLibrary__Utils.re
+bsb: [11/21] DomTestingLibrary__Queries.cmi
+[bsb] bsb: [12/21] DomTestingLibrary__Queries.cmj
+bsb: [13/21] DomTestingLibrary__Queries.cmt
+bsb: [14/21] DomTestingLibrary__Queries.re
+bsb: [15/21] DomTestingLibrary__FireEvent.cmi
+bsb: [16/21] DomTestingLibrary__FireEvent.cmj
+[bsb] bsb: [17/21] DomTestingLibrary__FireEvent.re
+[bsb] bsb: [18/21] DomTestingLibrary__FireEvent.rei
+[bsb] bsb: [19/21] DomTestingLibrary__FireEvent.cmt
+[bsb] bsb: [20/21] install.stamp
+[bsb] bsb: [21/21] DomTestingLibrary__FireEvent.cmti
+[bsb] Dependency on bs-react-testing-library
+[bsb] bsb: [1/5] src/ReactTestingLibrary.iast
+[bsb] bsb: [2/5] src/ReactTestingLibrary.ast
+[bsb] bsb: [3/5] src/ReactTestingLibrary.d
+[bsb] bsb: [4/5] src/ReactTestingLibrary.cmi
+[bsb] bsb: [5/5] src/ReactTestingLibrary.cmj
+[bsb] bsb: [1/7] ReactTestingLibrary.cmi
+[bsb] bsb: [2/7] ReactTestingLibrary.cmj
+[bsb] bsb: [3/7] ReactTestingLibrary.cmt
+[bsb] bsb: [4/7] ReactTestingLibrary.re
+[bsb] bsb: [5/7] ReactTestingLibrary.rei
+[bsb] bsb: [6/7] ReactTestingLibrary.cmti
+[bsb] bsb: [7/7] install.stamp
+[bsb] Dependency Finished
+[bsb] bsb: [1/10] src/__tests__/App_test.ast
+[bsb] bsb: [2/10] src/index.ast
+[bsb] bsb: [3/10] src/App.ast
+[bsb] bsb: [4/10] AppTemplateReasonReact.cmi
+[bsb] bsb: [5/10] src/__tests__/App_test.d
+[bsb] bsb: [6/10] src/index.d
+[bsb] bsb: [7/10] src/App.d
+[bsb] bsb: [8/10] src/App-AppTemplateReasonReact.cmj
+[bsb] bsb: [9/10] src/__tests__/App_test-AppTemplateReasonReact.cmj
+[bsb] bsb: [10/10] src/index-AppTemplateReasonReact.cmj
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.01s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [1.25s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@dominant/app-template"
+npx: installed 29 in 2.016s
+
+  - Using template @dominant/app-template
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 343 packages from 230 contributors and audited 344 packages in 8.153s
+
+36 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] [plugin=@snowpack/plugin-babel] "load()" returned a string, but "resolve.output" contains multiple possible outputs. If multiple outputs are expected, the object return format is required.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_39_20_993Z-debug.log
+template "@dominant/app-template-typescript"
+npx: installed 29 in 2.074s
+
+  - Using template @dominant/app-template-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 269 packages from 212 contributors and audited 270 packages in 7.134s
+
+31 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.03s]
+[snowpack] ! installing dependencies...
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@hisystems/snowpack-app-template-11ty"
+npx: installed 29 in 2.099s
+
+  - Using template @hisystems/snowpack-app-template-11ty
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js@2.6.12 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall /workspace/audit/app/node_modules/ejs
+> node ./postinstall.js
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 581 packages from 483 contributors and audited 582 packages in 12.072s
+
+29 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] [eleventy] Writing _output/about/index.html from ./_template/about.md.
+[snowpack] [eleventy] Writing _output/index.html from ./_template/index.njk.
+[snowpack] [eleventy] Copied 4 items / Wrote 2 files in 0.11 seconds (v0.10.0)
+[snowpack] ! building source…
+[snowpack] ✔ build complete [0.01s]
+[snowpack] ! installing dependencies…
+[snowpack] ✔ install complete [0.15s]
+[snowpack] ! minifying javascript...
+[snowpack] ✔ minification complete [0.01s]
+[snowpack] ▶ Build Complete!
+
+
+template "@hisystems/snowpack-app-template-blank"
+npx: installed 29 in 1.916s
+
+  - Using template @hisystems/snowpack-app-template-blank
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 215 packages from 175 contributors and audited 216 packages in 6.015s
+
+23 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source…
+[snowpack] ✔ build complete [0.02s]
+[snowpack] ! installing dependencies…
+[snowpack] ✔ install complete [0.17s]
+[snowpack] ! minifying javascript...
+[snowpack] ✔ minification complete [0.02s]
+[snowpack] ▶ Build Complete!
+
+
+template "@hisystems/snowpack-app-template-blank-typescript"
+npx: installed 29 in 1.992s
+
+  - Using template @hisystems/snowpack-app-template-blank-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 219 packages from 182 contributors and audited 220 packages in 5.577s
+
+23 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source…
+[snowpack] ✔ build complete [0.02s]
+[snowpack] ! installing dependencies…
+[snowpack] ✔ install complete [0.13s]
+[snowpack] ! minifying javascript...
+[snowpack] ✔ minification complete [0.01s]
+[snowpack] ▶ Build Complete!
+
+
+template "@hisystems/snowpack-app-template-lit-element"
+npx: installed 29 in 1.717s
+
+  - Using template @hisystems/snowpack-app-template-lit-element
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 254 packages from 187 contributors and audited 256 packages in 5.631s
+
+23 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+
+Error: Cannot find module '@snowpack/plugin-babel'
+Require stack:
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.resolve (internal/modules/cjs/helpers.js:80:19)
+    at /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3292:64
+    at Array.map (<anonymous>)
+    at loadAndValidateConfig (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3290:51)
+    at cli (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:5430:13)
+    at Object.<anonymous> (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js:29:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_40_27_508Z-debug.log
+template "@hisystems/snowpack-app-template-lit-element-typescript"
+npx: installed 29 in 1.757s
+
+  - Using template @hisystems/snowpack-app-template-lit-element-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 260 packages from 192 contributors and audited 262 packages in 6.322s
+
+23 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+
+Error: Cannot find module '@snowpack/plugin-babel'
+Require stack:
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.resolve (internal/modules/cjs/helpers.js:80:19)
+    at /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3292:64
+    at Array.map (<anonymous>)
+    at loadAndValidateConfig (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3290:51)
+    at cli (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:5430:13)
+    at Object.<anonymous> (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js:29:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_40_38_361Z-debug.log
+template "@hisystems/snowpack-app-template-preact"
+npx: installed 29 in 1.858s
+
+  - Using template @hisystems/snowpack-app-template-preact
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js@3.8.1 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 942 packages from 448 contributors and audited 943 packages in 18.129s
+
+42 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+
+Error: Cannot find module '@snowpack/plugin-babel'
+Require stack:
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.resolve (internal/modules/cjs/helpers.js:80:19)
+    at /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3292:64
+    at Array.map (<anonymous>)
+    at loadAndValidateConfig (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3290:51)
+    at cli (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:5430:13)
+    at Object.<anonymous> (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js:29:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_41_02_251Z-debug.log
+template "@hisystems/snowpack-app-template-react"
+npx: installed 29 in 2.221s
+
+  - Using template @hisystems/snowpack-app-template-react
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js@3.8.1 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 952 packages from 445 contributors and audited 953 packages in 17.608s
+
+42 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+
+Error: Cannot find module '@snowpack/plugin-react-refresh'
+Require stack:
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.resolve (internal/modules/cjs/helpers.js:80:19)
+    at /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3292:64
+    at Array.map (<anonymous>)
+    at loadAndValidateConfig (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3290:51)
+    at cli (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:5430:13)
+    at Object.<anonymous> (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js:29:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_41_26_358Z-debug.log
+template "@hisystems/snowpack-app-template-react-typescript"
+npx: installed 29 in 1.846s
+
+  - Using template @hisystems/snowpack-app-template-react-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js@3.8.1 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 958 packages from 475 contributors and audited 959 packages in 16.954s
+
+42 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+
+Error: Cannot find module '@snowpack/plugin-react-refresh'
+Require stack:
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.resolve (internal/modules/cjs/helpers.js:80:19)
+    at /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3292:64
+    at Array.map (<anonymous>)
+    at loadAndValidateConfig (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3290:51)
+    at cli (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:5430:13)
+    at Object.<anonymous> (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js:29:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_41_48_706Z-debug.log
+template "@hisystems/snowpack-app-template-svelte"
+npx: installed 29 in 1.761s
+
+  - Using template @hisystems/snowpack-app-template-svelte
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> deasync@0.1.21 install /workspace/audit/app/node_modules/deasync
+> node ./build.js
+
+`linux-x64-node-12` exists; testing
+Binary is fine; exiting
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> svelte-preprocess@4.6.1 postinstall /workspace/audit/app/node_modules/svelte-preprocess
+> echo "[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc..."
+
+[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc...
+added 929 packages from 494 contributors and audited 930 packages in 16.285s
+
+40 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+
+Error: Cannot find module '@snowpack/plugin-svelte'
+Require stack:
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.resolve (internal/modules/cjs/helpers.js:80:19)
+    at /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3292:64
+    at Array.map (<anonymous>)
+    at loadAndValidateConfig (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3290:51)
+    at cli (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:5430:13)
+    at Object.<anonymous> (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js:29:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_42_09_924Z-debug.log
+template "@hisystems/snowpack-app-template-svelte-typescript"
+npx: installed 29 in 1.691s
+
+  - Using template @hisystems/snowpack-app-template-svelte-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> deasync@0.1.21 install /workspace/audit/app/node_modules/deasync
+> node ./build.js
+
+`linux-x64-node-12` exists; testing
+Binary is fine; exiting
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> svelte-preprocess@4.6.1 postinstall /workspace/audit/app/node_modules/svelte-preprocess
+> echo "[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc..."
+
+[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc...
+added 932 packages from 498 contributors and audited 936 packages in 16.671s
+
+40 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+
+Error: Cannot find module '@snowpack/plugin-svelte'
+Require stack:
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.resolve (internal/modules/cjs/helpers.js:80:19)
+    at /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3292:64
+    at Array.map (<anonymous>)
+    at loadAndValidateConfig (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3290:51)
+    at cli (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:5430:13)
+    at Object.<anonymous> (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js:29:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_42_31_543Z-debug.log
+template "@hisystems/snowpack-app-template-vue"
+npx: installed 29 in 1.758s
+
+  - Using template @hisystems/snowpack-app-template-vue
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.6.34 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 264 packages from 195 contributors and audited 265 packages in 6.857s
+
+23 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+
+Error: Cannot find module '@snowpack/plugin-vue'
+Require stack:
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js
+- /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.resolve (internal/modules/cjs/helpers.js:80:19)
+    at /workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3292:64
+    at Array.map (<anonymous>)
+    at loadAndValidateConfig (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:3290:51)
+    at cli (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.js:5430:13)
+    at Object.<anonymous> (/workspace/audit/app/node_modules/@hisystems/snowpack/dist-node/index.bin.js:29:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_42_44_354Z-debug.log
+template "@idangazit/snowbank"
+npx: installed 29 in 1.838s
+
+  - Using template @idangazit/snowbank
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js@3.8.1 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 1298 packages from 567 contributors and audited 1301 packages in 23.983s
+
+78 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [2.79s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [1.24s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@joist/starter-snowpack"
+npx: installed 29 in 1.982s
+
+  - Using template @joist/starter-snowpack
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> puppeteer@5.5.0 install /workspace/audit/app/node_modules/puppeteer
+> node install.js
+
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 561 packages from 971 contributors and audited 563 packages in 19.359s
+
+55 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build --clean
+
+[snowpack] ! building source…
+[snowpack] ✔ build complete [0.04s]
+[snowpack] installing dependencies...
+[snowpack] ✔ install complete! [0.57s]
+[snowpack] 
+  ⦿ web_modules/                     size       gzip       brotli   
+    ├─ @joist/component.js           10.46 KB   2.91 KB    2.49 KB
+    └─ @joist/component/lit-html.js  47.46 KB   11.47 KB   9.72 KB
+
+
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete
+[snowpack] ! writing build to disk...
+[snowpack] ✔ build complete [0.04s]
+[snowpack] ▶ Build Complete!
+
+
+template "@joshnuss/svelte-snowpack-template"
+npx: installed 29 in 1.879s
+
+  - Using template @joshnuss/svelte-snowpack-template
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> deasync@0.1.21 install /workspace/audit/app/node_modules/deasync
+> node ./build.js
+
+`linux-x64-node-12` exists; testing
+Binary is fine; exiting
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> svelte-preprocess@4.6.1 postinstall /workspace/audit/app/node_modules/svelte-preprocess
+> echo "[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc..."
+
+[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc...
+added 1087 packages from 538 contributors and audited 1092 packages in 18.705s
+
+61 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[svelte-check] ====================================
+[svelte-check] svelte-check found 0 errors, 0 warnings and 0 hints
+[jest] PASS src/App.test.js
+[jest] ✓ renders learn svelte link (21 ms)
+[jest] 
+[jest] Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.593 s
+Ran all test suites.
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.11s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.26s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@kazuma1989/snowpack-template-preact"
+npx: installed 29 in 1.813s
+
+  - Using template @kazuma1989/snowpack-template-preact
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> undefined prepare /workspace/audit/app
+> snowpack
+
+[snowpack] snowpack - A faster build system for the modern web.
+
+  Snowpack is best configured via config file.
+  But, most configuration can also be passed via CLI flags.
+  📖 https://www.snowpack.dev/#configuration
+
+Commands:
+  snowpack init          Create a new project config file.
+  snowpack dev           Develop your app locally.
+  snowpack build         Build your app for production.
+  snowpack add [package] Add a package to your lockfile (import map).
+  snowpack rm [package]  Remove a package from your lockfile.
+  snowpack install       (Deprecated) Install web-ready dependencies.
+
+Flags:
+  --config [path]        Set the location of your project config file.
+  --help                 Show this help message.
+  --version              Show the current version.
+  --reload               Clear Snowpack's local cache (troubleshooting).
+  --verbose              View debug info (where available)
+  --quiet                Don’t output anything (dev server will still log minimally)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! undefined prepare: `snowpack`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the undefined prepare script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_44_27_761Z-debug.log
+(node:41515) UnhandledPromiseRejectionWarning: Error: Command failed with exit code 1: npm install --loglevel error
+    at makeError (/home/gitpod/.npm/_npx/41515/lib/node_modules/create-snowpack-app/node_modules/execa/lib/error.js:59:11)
+    at handlePromise (/home/gitpod/.npm/_npx/41515/lib/node_modules/create-snowpack-app/node_modules/execa/index.js:114:26)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /home/gitpod/.npm/_npx/41515/lib/node_modules/create-snowpack-app/createSnowpackApp.js:185:5
+(node:41515) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:41515) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] [New in v2.7] `installOptions.alias` has been moved to a top-level `alias` config. (https://snowpack.dev#all-config-options)
+
+See https://www.snowpack.dev/#configuration for more info.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_44_28_472Z-debug.log
+template "@martel/heat-template"
+npx: installed 29 in 2.038s
+
+  - Using template @martel/heat-template
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> husky@4.3.0 install /workspace/audit/app/node_modules/husky
+> node husky install
+
+husky > Setting up git hooks
+husky > Done
+
+> core-js@3.8.1 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> husky@4.3.0 postinstall /workspace/audit/app/node_modules/husky
+> opencollective-postinstall || exit 0
+
+
+> nodemon@2.0.6 postinstall /workspace/audit/app/node_modules/nodemon
+> node bin/postinstall || exit 0
+
+added 2083 packages from 643 contributors and audited 2086 packages in 45.482s
+
+97 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> echo "Nothing to build" && exit 0
+
+Nothing to build
+template "@martel/hyperapp-snowpack"
+npx: installed 29 in 2.205s
+
+  - Using template @martel/hyperapp-snowpack
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js@3.8.1 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 1319 packages from 508 contributors and audited 1322 packages in 26.285s
+
+78 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [3.70s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.17s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ! optimizing build...
+[snowpack] ✔ optimize complete [0.07s]
+[snowpack] ▶ Build Complete!
+
+
+template "@martel/tql-template"
+npx: installed 29 in 2.182s
+
+  - Using template @martel/tql-template
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> husky@4.3.0 install /workspace/audit/app/node_modules/husky
+> node husky install
+
+husky > Setting up git hooks
+husky > Done
+
+> core-js@3.8.1 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> husky@4.3.0 postinstall /workspace/audit/app/node_modules/husky
+> opencollective-postinstall || exit 0
+
+
+> nodemon@2.0.6 postinstall /workspace/audit/app/node_modules/nodemon
+> node bin/postinstall || exit 0
+
+added 2083 packages from 643 contributors and audited 2086 packages in 44.801s
+
+97 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> echo "Nothing to build" && exit 0
+
+Nothing to build
+template "@navillus/app-template-11ty"
+npx: installed 29 in 1.945s
+
+  - Using template @navillus/app-template-11ty
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> deasync@0.1.21 install /workspace/audit/app/node_modules/deasync
+> node ./build.js
+
+`linux-x64-node-12` exists; testing
+Binary is fine; exiting
+
+> sharp@0.25.4 install /workspace/audit/app/node_modules/sharp
+> (node install/libvips && node install/dll-copy && prebuild-install --runtime=napi) || (node-gyp rebuild && node install/dll-copy)
+
+info sharp Using cached /home/gitpod/.npm/_libvips/libvips-8.9.1-linux-x64.tar.gz
+
+> core-js@2.6.12 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall /workspace/audit/app/node_modules/ejs
+> node ./postinstall.js
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> parcel-bundler@1.12.4 postinstall /workspace/audit/app/node_modules/parcel-bundler
+> node -e "console.log('\u001b[35m\u001b[1mLove Parcel? You can now donate to our open collective:\u001b[22m\u001b[39m\n > \u001b[34mhttps://opencollective.com/parcel/donate\u001b[0m')"
+
+[35m[1mLove Parcel? You can now donate to our open collective:[22m[39m
+ > [34mhttps://opencollective.com/parcel/donate[0m
+added 1388 packages from 919 contributors and audited 1390 packages in 26.792s
+
+70 packages are looking for funding
+  run `npm fund` for details
+
+found 1 high severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[eleventy] Writing _output/about/index.html from ./site/pages/about.md.
+[eleventy] Writing _output/index.html from ./site/pages/index.njk.
+Writing _output/terms/index.html from ./site/pages/terms.md.
+Writing _output/privacy/index.html from ./site/pages/privacy.md.
+Copied 1 item / Wrote 4 files in 0.49 seconds (v0.10.0)
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.03s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.68s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ! optimizing build...
+[snowpack] [@snowpack/plugin-parcel] There was a problem running this older plugin. Please update the plugin to the latest version.
+[@snowpack/plugin-parcel] Error: Source and destination must not be the same.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_47_27_095Z-debug.log
+template "@snlab/florence-template"
+npx: installed 29 in 1.964s
+
+  - Using template @snlab/florence-template
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> svelte-preprocess@4.6.1 postinstall /workspace/audit/app/node_modules/svelte-preprocess
+> echo "[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc..."
+
+[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc...
+added 567 packages from 414 contributors and audited 568 packages in 13.409s
+
+47 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.08s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [7.76s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-11ty"
+npx: installed 29 in 3.087s
+
+  - Using template @snowpack/app-template-11ty
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js@2.6.12 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> ejs@2.7.4 postinstall /workspace/audit/app/node_modules/ejs
+> node ./postinstall.js
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 660 packages from 510 contributors and audited 661 packages in 18.47s
+
+38 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[eleventy] Writing _output/index.html from ./_template/index.njk.
+[eleventy] Writing _output/about/index.html from ./_template/about.md.
+Copied 3 files / Wrote 2 files in 0.12 seconds (v0.11.1)
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.01s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.14s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-blank"
+npx: installed 29 in 2.147s
+
+  - Using template @snowpack/app-template-blank
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 268 packages from 211 contributors and audited 269 packages in 7.461s
+
+32 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.02s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.15s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-blank-typescript"
+npx: installed 29 in 2.032s
+
+  - Using template @snowpack/app-template-blank-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 272 packages from 218 contributors and audited 273 packages in 7.394s
+
+32 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.02s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.18s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "snowpack-app-template-crank-typescript"
+npx: installed 29 in 2.027s
+
+  - Using template snowpack-app-template-crank-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 317 packages from 217 contributors and audited 318 packages in 8.075s
+
+32 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.34s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.45s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "snowpack-app-template-glimmer"
+npx: installed 29 in 2.185s
+
+  - Using template snowpack-app-template-glimmer
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js@2.6.12 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 605 packages from 335 contributors and audited 610 packages in 12.396s
+
+39 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.47s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [2.26s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.01s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-lit-element"
+npx: installed 29 in 1.859s
+
+  - Using template @snowpack/app-template-lit-element
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 306 packages from 217 contributors and audited 308 packages in 6.823s
+
+32 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.52s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.66s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.01s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-lit-element-typescript"
+npx: installed 29 in 1.769s
+
+  - Using template @snowpack/app-template-lit-element-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 313 packages from 222 contributors and audited 315 packages in 7.632s
+
+32 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.52s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.61s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.01s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-minimal"
+npx: installed 29 in 1.8s
+
+  - Using template @snowpack/app-template-minimal
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 266 packages from 209 contributors and audited 267 packages in 6.142s
+
+31 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.20s]
+[snowpack] ! installing dependencies...
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-preact"
+npx: installed 29 in 1.924s
+
+  - Using template @snowpack/app-template-preact
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 567 packages from 404 contributors and audited 568 packages in 11.461s
+
+49 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.03s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.24s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-preact-typescript"
+npx: installed 29 in 1.864s
+
+  - Using template @snowpack/app-template-preact-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 568 packages from 417 contributors and audited 569 packages in 13.993s
+
+49 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.03s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.24s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-react"
+npx: installed 29 in 1.894s
+
+  - Using template @snowpack/app-template-react
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 569 packages from 404 contributors and audited 570 packages in 11.321s
+
+48 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.03s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [1.14s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.01s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-react-typescript"
+npx: installed 29 in 1.938s
+
+  - Using template @snowpack/app-template-react-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 575 packages from 449 contributors and audited 576 packages in 11.901s
+
+48 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.03s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [1.15s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.01s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-svelte"
+npx: installed 29 in 1.966s
+
+  - Using template @snowpack/app-template-svelte
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> svelte-preprocess@4.6.1 postinstall /workspace/audit/app/node_modules/svelte-preprocess
+> echo "[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc..."
+
+[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc...
+added 538 packages from 407 contributors and audited 539 packages in 11.321s
+
+47 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.12s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.24s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-svelte-typescript"
+npx: installed 29 in 1.783s
+
+  - Using template @snowpack/app-template-svelte-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> svelte-preprocess@4.6.1 postinstall /workspace/audit/app/node_modules/svelte-preprocess
+> echo "[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc..."
+
+[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc...
+added 540 packages from 424 contributors and audited 542 packages in 11.235s
+
+47 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.40s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.25s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.01s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-vue"
+npx: installed 29 in 1.936s
+
+  - Using template @snowpack/app-template-vue
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 283 packages from 214 contributors and audited 284 packages in 6.759s
+
+31 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.03s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [1.42s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@snowpack/app-template-vue-typescript"
+npx: installed 29 in 2.401s
+
+  - Using template @snowpack/app-template-vue-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 278 packages from 215 contributors and audited 279 packages in 7.057s
+
+31 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.10s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [1.50s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "snowpack-cycle"
+npx: installed 29 in 1.864s
+
+  - Using template snowpack-cycle
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 278 packages from 222 contributors and audited 281 packages in 6.603s
+
+34 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.02s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [1.17s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "snowpack-dominant"
+npx: installed 29 in 1.874s
+
+  - Using template snowpack-dominant
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 303 packages from 215 contributors and audited 304 packages in 7.26s
+
+33 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] [plugin=@snowpack/plugin-babel] "load()" returned a string, but "resolve.output" contains multiple possible outputs. If multiple outputs are expected, the object return format is required.
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_53_04_225Z-debug.log
+template "snowpack-dominant-typescript"
+npx: installed 29 in 1.801s
+
+  - Using template snowpack-dominant-typescript
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 270 packages from 213 contributors and audited 271 packages in 6.791s
+
+32 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.02s]
+[snowpack] ! installing dependencies...
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "snowpack-mdx-chakra"
+npx: installed 29 in 1.888s
+
+  - Using template snowpack-mdx-chakra
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 772 packages from 489 contributors and audited 773 packages in 15.24s
+
+107 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.68s]
+[snowpack] ! installing dependencies... (source: skypack)
+[snowpack] Package "react" not found. Have you installed it? 
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_53_45_329Z-debug.log
+template "snowpack-react-tailwind"
+npx: installed 29 in 1.857s
+
+  - Using template snowpack-react-tailwind
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js@3.8.1 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> undefined prepare /workspace/audit/app
+> snowpack
+
+[snowpack] snowpack - A faster build system for the modern web.
+
+  Snowpack is best configured via config file.
+  But, most configuration can also be passed via CLI flags.
+  📖 https://www.snowpack.dev/#configuration
+
+Commands:
+  snowpack init          Create a new project config file.
+  snowpack dev           Develop your app locally.
+  snowpack build         Build your app for production.
+  snowpack add [package] Add a package to your lockfile (import map).
+  snowpack rm [package]  Remove a package from your lockfile.
+  snowpack install       (Deprecated) Install web-ready dependencies.
+
+Flags:
+  --config [path]        Set the location of your project config file.
+  --help                 Show this help message.
+  --version              Show the current version.
+  --reload               Clear Snowpack's local cache (troubleshooting).
+  --verbose              View debug info (where available)
+  --quiet                Don’t output anything (dev server will still log minimally)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! undefined prepare: `snowpack`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the undefined prepare script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_54_15_271Z-debug.log
+(node:46919) UnhandledPromiseRejectionWarning: Error: Command failed with exit code 1: npm install --loglevel error
+    at makeError (/home/gitpod/.npm/_npx/46919/lib/node_modules/create-snowpack-app/node_modules/execa/lib/error.js:59:11)
+    at handlePromise (/home/gitpod/.npm/_npx/46919/lib/node_modules/create-snowpack-app/node_modules/execa/index.js:114:26)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /home/gitpod/.npm/_npx/46919/lib/node_modules/create-snowpack-app/createSnowpackApp.js:185:5
+(node:46919) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:46919) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+
+warn - The `conservative` purge mode will be removed in Tailwind 2.0.
+warn - Please switch to the new `layers` mode instead.
+[snowpack] ✔ build complete [2.83s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [1.15s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.01s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "snowpack-svelte-ts-tw"
+npx: installed 29 in 1.85s
+
+  - Using template snowpack-svelte-ts-tw
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> deasync@0.1.21 install /workspace/audit/app/node_modules/deasync
+> node ./build.js
+
+`linux-x64-node-12` exists; testing
+Binary is fine; exiting
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> svelte-preprocess@4.6.1 postinstall /workspace/audit/app/node_modules/svelte-preprocess
+> echo "[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc..."
+
+[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc...
+added 775 packages from 417 contributors and audited 782 packages in 14.35s
+
+51 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+
+warn - Tailwind is not purging unused styles because no template paths have been provided.
+warn - If you have manually configured PurgeCSS outside of Tailwind or are deliberately not removing unused styles, set `purge: false` in your Tailwind config file to silence this warning.
+warn - https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
+
+warn - Tailwind is not purging unused styles because no template paths have been provided.
+warn - If you have manually configured PurgeCSS outside of Tailwind or are deliberately not removing unused styles, set `purge: false` in your Tailwind config file to silence this warning.
+warn - https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
+[snowpack] ✔ build complete [4.00s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.23s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "snowpack-template-preset-env"
+npx: installed 29 in 1.84s
+
+  - Using template snowpack-template-preset-env
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> deasync@0.1.21 install /workspace/audit/app/node_modules/deasync
+> node ./build.js
+
+`linux-x64-node-12` exists; testing
+Binary is fine; exiting
+
+> core-js@2.6.12 postinstall /workspace/audit/app/node_modules/core-js
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> parcel-bundler@1.12.4 postinstall /workspace/audit/app/node_modules/parcel-bundler
+> node -e "console.log('\u001b[35m\u001b[1mLove Parcel? You can now donate to our open collective:\u001b[22m\u001b[39m\n > \u001b[34mhttps://opencollective.com/parcel/donate\u001b[0m')"
+
+[35m[1mLove Parcel? You can now donate to our open collective:[22m[39m
+ > [34mhttps://opencollective.com/parcel/donate[0m
+
+> undefined prepare /workspace/audit/app
+> snowpack
+
+[snowpack] snowpack - A faster build system for the modern web.
+
+  Snowpack is best configured via config file.
+  But, most configuration can also be passed via CLI flags.
+  📖 https://www.snowpack.dev/#configuration
+
+Commands:
+  snowpack init          Create a new project config file.
+  snowpack dev           Develop your app locally.
+  snowpack build         Build your app for production.
+  snowpack add [package] Add a package to your lockfile (import map).
+  snowpack rm [package]  Remove a package from your lockfile.
+  snowpack install       (Deprecated) Install web-ready dependencies.
+
+Flags:
+  --config [path]        Set the location of your project config file.
+  --help                 Show this help message.
+  --version              Show the current version.
+  --reload               Clear Snowpack's local cache (troubleshooting).
+  --verbose              View debug info (where available)
+  --quiet                Don’t output anything (dev server will still log minimally)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! undefined prepare: `snowpack`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the undefined prepare script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_55_10_609Z-debug.log
+(node:47401) UnhandledPromiseRejectionWarning: Error: Command failed with exit code 1: npm install --loglevel error
+    at makeError (/home/gitpod/.npm/_npx/47401/lib/node_modules/create-snowpack-app/node_modules/execa/lib/error.js:59:11)
+    at handlePromise (/home/gitpod/.npm/_npx/47401/lib/node_modules/create-snowpack-app/node_modules/execa/index.js:114:26)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async /home/gitpod/.npm/_npx/47401/lib/node_modules/create-snowpack-app/createSnowpackApp.js:185:5
+(node:47401) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:47401) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+postcss.plugin was deprecated. Migration guide:
+https://evilmartians.com/chronicles/postcss-8-plugin-migration
+[snowpack] ✔ build complete [1.33s]
+[snowpack] The "path" argument must be of type string. Received undefined
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ build: `snowpack build`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the @ build script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/gitpod/.npm/_logs/2020-12-14T18_55_12_658Z-debug.log
+template "snowpack-template-tailwind"
+npx: installed 29 in 1.865s
+
+  - Using template snowpack-template-tailwind
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> husky@4.3.6 install /workspace/audit/app/node_modules/husky
+> node husky install
+
+husky > Setting up git hooks
+husky > Done
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> husky@4.3.6 postinstall /workspace/audit/app/node_modules/husky
+> opencollective-postinstall || exit 0
+
+added 437 packages from 245 contributors and audited 438 packages in 8.619s
+
+37 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.01s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.01s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "svelte-tailwind-snowpack"
+npx: installed 29 in 1.843s
+
+  - Using template svelte-tailwind-snowpack
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> deasync@0.1.21 install /workspace/audit/app/node_modules/deasync
+> node ./build.js
+
+`linux-x64-node-12` exists; testing
+Binary is fine; exiting
+
+> husky@4.3.6 install /workspace/audit/app/node_modules/husky
+> node husky install
+
+husky > Setting up git hooks
+husky > Done
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+
+> svelte-preprocess@4.6.1 postinstall /workspace/audit/app/node_modules/svelte-preprocess
+> echo "[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc..."
+
+[svelte-preprocess] Don't forget to install the preprocessors packages that will be used: node-sass/sass, stylus, less, postcss & postcss-load-config, coffeescript, pug, etc...
+
+> husky@4.3.6 postinstall /workspace/audit/app/node_modules/husky
+> opencollective-postinstall || exit 0
+
+added 1150 packages from 702 contributors and audited 1157 packages in 21.11s
+
+68 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [2.88s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [0.22s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.00s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@unlockdep/app-template-react-sass"
+npx: installed 29 in 1.913s
+
+  - Using template @unlockdep/app-template-react-sass
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 569 packages from 405 contributors and audited 570 packages in 11.384s
+
+48 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.30s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [1.14s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.01s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
+template "@unlockdep/app-template-react-typescript-sass"
+npx: installed 29 in 1.886s
+
+  - Using template @unlockdep/app-template-react-typescript-sass
+  - Creating a new project in /workspace/audit/app
+  - Installing package dependencies. This might take a couple of minutes.
+
+
+> core-js-pure@3.8.1 postinstall /workspace/audit/app/node_modules/core-js-pure
+> node -e "try{require('./postinstall')}catch(e){}"
+
+
+> esbuild@0.8.22 postinstall /workspace/audit/app/node_modules/esbuild
+> node install.js
+
+added 577 packages from 450 contributors and audited 578 packages in 11.858s
+
+48 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+
+  - Initializing git repo.
+
+  - Success!
+
+Quickstart:
+
+  cd app
+  npm start
+
+All Commands:
+
+  npm install      Install your dependencies. (We already ran this one for you!)
+  npm start        Start your development server.
+  npm run build    Build your website for production.
+  npm test         Run your tests.
+
+
+> @ build /workspace/audit/app
+> snowpack build
+
+[snowpack] ! building source files...
+[snowpack] ✔ build complete [0.30s]
+[snowpack] ! installing dependencies...
+[snowpack] ✔ install complete! [1.11s]
+[snowpack] ! verifying build...
+[snowpack] ✔ verification complete [0.01s]
+[snowpack] ! writing build to disk...
+[snowpack] ▶ Build Complete!
+
+
