@@ -23,8 +23,8 @@ jobs:
           "@snowpack/app-template-svelte-typescript",
           # "@hisystems/snowpack-app-template-svelte",
           # "@hisystems/snowpack-app-template-svelte-typescript",
-          "@snowpack/plugin-postcss",
-          # "@hisystems/snowpack-plugin-svelte",
+          # "@snowpack/plugin-postcss",
+          "@hisystems/snowpack-plugin-svelte",
           # "@hisystems/snowpack-plugin-postcss",
           # "@snowpack/app-scripts-svelte",
           # "@vaishnavsm/snowpack-svelte-conf",
@@ -39,10 +39,8 @@ jobs:
           # "@hisystems/snowpack-app-template-svelte-typescript",
           "svelte-tailwind-snowpack",
           # "@snowpack/app-scripts-svelte",
-          "svelt3",
           # "@carv/snowpack-scripts-svelte",
           # "@hisystems/snowpack-app-scripts-svelte",
-          # "@jakedeichert/svelvet"
           ]
         os: [ubuntu-latest]
     runs-on: ${{matrix.os}}
