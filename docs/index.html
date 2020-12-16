@@ -1,0 +1,36 @@
+<div x-data=data() x-init="init([], x => templates = x)">
+  npm search keywords:csa-template
+  <ul>
+    <template x-for="template in templates">
+      <li>
+        <a :href="template.package.links.npm">
+          npm
+        </a>
+        <a :href="template.package.links.repository">
+          git
+        </a>
+        <span x-text="template.package.name">
+        </span>
+      </li>
+    </template>
+  </ul>
+</div>
+
+<script>
+    function data() {
+        return { templates: [] };
+    }
+
+    function init(already, update) {
+        update(already);
+        fetch("https://registry.npmjs.org/-/v1/search?text=keywords:csa-template&size=10&from=" + already.length)
+            .then((r) => r.json())
+            .then((j) => {
+                var batch = j.objects;
+                if (batch.length != 0) {
+                    init(already.concat(batch), update);
+                }
+            });
+    }
+</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.7.3/alpine.js></script>
