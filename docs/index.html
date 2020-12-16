@@ -7,14 +7,16 @@
     <ul>
         <template x-for="template in templates" :key=template.package.name>
         <li>
-            <a :href="template.package.links.npm">
-            npm
-            </a>
-            <a :href="template.package.links.repository">
-            git
-            </a>
-              <span x-text="template.package.name">
+            <span x-text="template.package.name">
             </span>
+            <ul>
+                <li>
+                    <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
+                        <a :href=url x-text=id>
+                        </a>
+                    </template>
+                </li>
+            </ul>
         </li>
         </template>
     </ul>
@@ -44,4 +46,4 @@
             });
     }
 </script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.7.3/alpine.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js></script>
