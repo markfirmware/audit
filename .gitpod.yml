@@ -1,0 +1,7 @@
+ports:
+  - port: 8080
+    onOpen: open-preview
+
+tasks:
+  - name: preview
+    command: npx servor docs --reload
