@@ -1,19 +1,24 @@
 <div x-data=data() x-init="init([], x => templates = x)">
-  npm search keywords:csa-template
-  <ul>
-    <template x-for="template in templates">
-      <li>
-        <a :href="template.package.links.npm">
-          npm
-        </a>
-        <a :href="template.package.links.repository">
-          git
-        </a>
-        <span x-text="template.package.name">
-        </span>
-      </li>
-    </template>
-  </ul>
+  <a href=https://github.com/markfirmware/audit>
+    markfirmware/audit
+  </a>
+  <div>
+    npm search keywords:csa-template
+    <ul>
+        <template x-for="template in templates" :key=template.package.name>
+        <li>
+            <a :href="template.package.links.npm">
+            npm
+            </a>
+            <a :href="template.package.links.repository">
+            git
+            </a>
+              <span x-text="template.package.name">
+            </span>
+        </li>
+        </template>
+    </ul>
+  </div>
 </div>
 
 <script>
@@ -28,7 +33,13 @@
             .then((j) => {
                 var batch = j.objects;
                 if (batch.length != 0) {
-                    init(already.concat(batch), update);
+                    var bigger = already.concat(batch);
+                    bigger.sort((x, y) => {
+                        let a = x.package.name,
+                            b = y.package.name;
+                        return a == b ? 0 : a < b ? -1 : 1;
+                    });
+                    init(bigger, update);
                 }
             });
     }
