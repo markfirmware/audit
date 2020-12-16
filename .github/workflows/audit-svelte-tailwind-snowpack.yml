@@ -9,7 +9,7 @@ jobs:
   npm-run-build-templates:
     strategy:
       matrix:
-        template: [svelte-tailwind-snowpack 
+        template: [svelte-tailwind-snowpack]
         # os: [macos-latest, ubuntu-latest, windows-latest]
         os: [windows-latest]
     runs-on: ${{matrix.os}}
