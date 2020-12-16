@@ -6,18 +6,40 @@
     npm search keywords:csa-template
     <ul>
         <template x-for="template in templates" :key=template.package.name>
-        <li>
-            <span x-text="template.package.name">
-            </span>
-            <ul>
-                <li>
-                    <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
-                        <a :href=url x-text=id>
-                        </a>
-                    </template>
-                </li>
-            </ul>
-        </li>
+            <div>
+                <template x-if="Object.entries(template.package.links).length > 1">
+                    <li>
+                        <span x-text="template.package.name">
+                        </span>
+                        <ul>
+                            <li>
+                                <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
+                                    <a :href=url x-text=id>
+                                    </a>
+                                </template>
+                            </li>
+                        </ul>
+                    </li>
+                </template>
+            </div>
+        </template>
+        <template x-for="template in templates" :key=template.package.name>
+            <div>
+                <template x-if="Object.entries(template.package.links).length == 1">
+                    <li>
+                        <span x-text="template.package.name">
+                        </span>
+                        <ul>
+                            <li>
+                                <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
+                                    <a :href=url x-text=id>
+                                    </a>
+                                </template>
+                            </li>
+                        </ul>
+                    </li>
+                </template>
+            </div>
         </template>
     </ul>
   </div>
