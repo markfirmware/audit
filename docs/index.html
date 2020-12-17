@@ -1,3 +1,20 @@
+<div x-data=runsData() x-init="runsInit(1, [], x => runs = x)">
+    <ul>
+        <template x-for="run in runs" :key=run.run_number>
+            <li>
+                <span x-text=run.run_number>
+                </span>
+                <span x-text=run.status>
+                </span>
+                <span x-text=run.conclusion>
+                </span>
+                <span x-text=run.name>
+                </span>
+            </li>
+        </template>
+    </ul>
+</div>
+
 <div x-data=data() x-init="init([], x => templates = x)">
   <a href=https://github.com/markfirmware/audit>
     markfirmware/audit
@@ -68,4 +85,25 @@
             });
     }
 </script>
+
+<script>
+    function runsData() {
+        return { runs: [] };
+    }
+
+    function runsInit(page, already, update) {
+        update(already);
+        fetch("https://api.github.com/repos/markfirmware/audit/actions/runs?per_page=100&page=" + page)
+            .then((r) => r.json())
+            .then((j) => {
+                var batch = j.workflow_runs;
+                if (batch.length != 0) {
+                    var bigger = already.concat(batch);
+                    bigger.sort((x, y) => y.run_number - x.run_number);
+                    runsInit(page + 1, bigger, update);
+                }
+            });
+    }
+</script>
+
 <script src=https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js></script>
