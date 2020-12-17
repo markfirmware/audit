@@ -1,7 +1,9 @@
+<html>
+    <body>
 <div x-data=runsData() x-init="runsInit(1, [], x => runs = x)">
     <ul>
         <template x-for="run in runs" :key=run.run_number>
-            <li>
+            <li :class="run.conclusion == 'failure' ? 'text-red-400 font-bold' : 'text-blue-400'">
                 <span x-text=run.run_number>
                 </span>
                 <span x-text=run.status>
@@ -61,49 +63,55 @@
     </ul>
   </div>
 </div>
+</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <script>
+            function data() {
+                return { templates: [] };
+            }
 
-<script>
-    function data() {
-        return { templates: [] };
-    }
-
-    function init(already, update) {
-        update(already);
-        fetch("https://registry.npmjs.org/-/v1/search?text=keywords:csa-template&size=10&from=" + already.length)
-            .then((r) => r.json())
-            .then((j) => {
-                var batch = j.objects;
-                if (batch.length != 0) {
-                    var bigger = already.concat(batch);
-                    bigger.sort((x, y) => {
-                        let a = x.package.name,
-                            b = y.package.name;
-                        return a == b ? 0 : a < b ? -1 : 1;
+            function init(already, update) {
+                update(already);
+                fetch("https://registry.npmjs.org/-/v1/search?text=keywords:csa-template&size=10&from=" + already.length)
+                    .then((r) => r.json())
+                    .then((j) => {
+                        var batch = j.objects;
+                        if (batch.length != 0) {
+                            var bigger = already.concat(batch);
+                            bigger.sort((x, y) => {
+                                let a = x.package.name,
+                                    b = y.package.name;
+                                return a == b ? 0 : a < b ? -1 : 1;
+                            });
+                            init(bigger, update);
+                        }
                     });
-                    init(bigger, update);
-                }
-            });
-    }
-</script>
+            }
+        </script>
 
-<script>
-    function runsData() {
-        return { runs: [] };
-    }
+        <script>
+            function runsData() {
+                return { runs: [] };
+            }
 
-    function runsInit(page, already, update) {
-        update(already);
-        fetch("https://api.github.com/repos/markfirmware/audit/actions/runs?per_page=100&page=" + page)
-            .then((r) => r.json())
-            .then((j) => {
-                var batch = j.workflow_runs;
-                if (batch.length != 0) {
-                    var bigger = already.concat(batch);
-                    bigger.sort((x, y) => y.run_number - x.run_number);
-                    runsInit(page + 1, bigger, update);
-                }
-            });
-    }
-</script>
+            function runsInit(page, already, update) {
+                update(already);
+                fetch("https://api.github.com/repos/markfirmware/audit/actions/runs?per_page=100&page=" + page)
+                    .then((r) => r.json())
+                    .then((j) => {
+                        var batch = j.workflow_runs;
+                        if (batch.length != 0) {
+                            var bigger = already.concat(batch);
+                            bigger.sort((x, y) => y.run_number - x.run_number);
+                            runsInit(page + 1, bigger, update);
+                        }
+                    });
+            }
+        </script>
 
-<script src=https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js></script>
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js></script>
+    </head>
+</html>
