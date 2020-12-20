@@ -1,104 +1,9 @@
 <html>
-    <body>
-        <div x-data="{ state: 'entered_started', github_token: '', login: '' }">
-            <div>
-                diagnostics
-                state <span x-text="state">
-                </span>
-                login <span x-text="login">
-                </span>
-            </div>
-            <template x-if="state == 'entered_started'">
-                <div>
-                    <input x-model=github_token placeholder="40 character github token">
-                    <template x-if="github_token.length == 40 &&
-                        (state = 'connected_started') &&
-                        connect(github_token, new_data => {
-                            login = new_data.login;
-                            state = 'connected';
-                        })">
-                    </template>
-                </div>
-            </template>
-            <template x-if="state == 'connected_started'">
-                <div>
-                    connecting ...
-                </div>
-            </template>
-            <template x-if="state == 'connected'">
-                <div>
-                    login <span x-text="login">
-                    </span>
-                </div>
-            </template>
-        </div>
-        <div x-data=runsData() x-init="runsInit(1, [], x => runs = x)">
-            <ul>
-                <template x-for="run in runs" :key=run.run_number>
-                    <li :class="run.conclusion == 'failure' ? 'text-red-400 font-bold' : 'text-blue-400'">
-                        <span x-text=run.run_number>
-                        </span>
-                        <span x-text=run.status>
-                        </span>
-                        <span x-text=run.conclusion>
-                        </span>
-                        <span x-text=run.name>
-                        </span>
-                    </li>
-                </template>
-            </ul>
-        </div>
-        <div x-data=data() x-init="init([], x => templates = x)">
-        <a href=https://github.com/markfirmware/audit>
-            markfirmware/audit
-        </a>
-        <div>
-            npm search keywords:csa-template
-            <ul>
-                <template x-for="template in templates" :key=template.package.name>
-                    <div>
-                        <template x-if="Object.entries(template.package.links).length > 1">
-                            <li>
-                                <span x-text="template.package.name">
-                                </span>
-                                <ul>
-                                    <li>
-                                        <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
-                                            <a :href=url x-text=id>
-                                            </a>
-                                        </template>
-                                    </li>
-                                </ul>
-                            </li>
-                        </template>
-                    </div>
-                </template>
-                <template x-for="template in templates" :key=template.package.name>
-                    <div>
-                        <template x-if="Object.entries(template.package.links).length == 1">
-                            <li>
-                                <span x-text="template.package.name">
-                                </span>
-                                <ul>
-                                    <li>
-                                        <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
-                                            <a :href=url x-text=id>
-                                            </a>
-                                        </template>
-                                    </li>
-                                </ul>
-                            </li>
-                        </template>
-                    </div>
-                </template>
-            </ul>
-        </div>
-        </div>
-    </body>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js></script>
         <script>
             function connect(token, update) {
                 fetch("https://api.github.com/user", {
@@ -110,6 +15,21 @@
                     .then((r) => r.json())
                     .then((j) => {
                         update({ login: j.login });
+                    });
+                return true;
+            }
+            function deleteRun(token, url, deleted_run_urls) {
+                deleted_run_urls.push(url);
+                console.log("delete", token, url);
+                fetch(url,  {
+                    method: 'DELETE',
+                    headers: {
+                        Authorization: ('token ' + token),
+                        Accept: 'application/vnd.github.v3+json'
+                    }
+                })
+                    .then((r) => {
+                        console.log("delete done " + r.status);
                     });
                 return true;
             }
@@ -138,24 +58,150 @@
             }
         </script>
         <script>
-            function runsData() {
-                return { runs: [] };
+            function githubData() {
+                return { state: 'entered_started', github_token: '', login: '', runs: [], deleted_run_urls: [], hidden_run_urls: [] };
             }
 
-            function runsInit(page, already, update) {
+            function reloadRuns(token, page, already, update) {
                 update(already);
-                fetch("https://api.github.com/repos/markfirmware/audit/actions/runs?per_page=100&page=" + page)
+                fetch("https://api.github.com/repos/markfirmware/audit/actions/runs?per_page=100&page=" + page, {
+                    headers: {
+                        Authorization: ('token ' + token),
+                        Accept: 'application/vnd.github.v3+json'
+                    }
+                })
                     .then((r) => r.json())
                     .then((j) => {
                         var batch = j.workflow_runs;
                         if (batch.length != 0) {
                             var bigger = already.concat(batch);
-                            bigger.sort((x, y) => y.run_number - x.run_number);
-                            runsInit(page + 1, bigger, update);
+                            bigger.sort((x, y) => {
+                                let a = x.name + x.run_number,
+                                    b = y.name + y.run_number;
+                                return a == b ? 0 : a < b ? 1 : -1;
+                            });
+                            reloadRuns(token, page + 1, bigger, update);
                         }
                     });
             }
         </script>
-        <script src=https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js></script>
     </head>
+    <body class=font-mono>
+        <div x-data=githubData()>
+            <div>
+                diagnostics
+                state <span x-text="state">
+                </span>
+                login <span x-text="login">
+                </span>
+            </div>
+            <template x-if="state == 'entered_started'">
+                <div>
+                    <input x-model=github_token placeholder="40 character github token">
+                    <template x-if="github_token.length == 40 &&
+                        (state = 'connected_started') &&
+                        connect(github_token, (new_data) => {
+                            login = new_data.login;
+                            state = 'connected';
+                            reloadRuns(github_token, 1, [], (x) => runs = x);
+                        })">
+                        <div>
+                        </div>
+                    </template>
+                </div>
+            </template>
+            <template x-if="state == 'connected_started'">
+                <div>
+                    connecting ...
+                </div>
+            </template>
+            <template x-if="state == 'connected'">
+                <div>
+                    <div>
+                        login <span x-text="login">
+                        </span>
+                    </div>
+                    <button @click="hidden_run_urls = deleted_run_urls.slice(0); reloadRuns(github_token, 1, [], x => runs = x)">
+                        reload runs
+                    </button>
+                    <ul class=text-yellow-400>
+                        <template x-for="run in runs" :key=run.run_number>
+                            <li x-show=!hidden_run_urls.includes(run.url)
+                                :class="{ 'line-through': deleted_run_urls.includes(run.url),
+                                          'text-red-400': run.conclusion == 'failure',
+                                          'font-bold': run.conclusion == 'failure',
+                                          'text-green-800': run.conclusion == 'success'
+                                        }">
+                                <button
+                                    :class="{ 'border': true,
+                                              'bg-gray-200': true,
+                                              'hover:bg-gray-300': true,
+                                              'border-gray-400': true,
+                                              'line-through': deleted_run_urls.includes(run.url)
+                                            }"
+                                    :disabled="run.status != 'completed' || deleted_run_urls.includes(run.url)"
+                                    @click="deleteRun(github_token, run.url, deleted_run_urls)">
+                                    delete
+                                </button>
+                                <span x-text=run.run_number>
+                                </span>
+                                <span x-show="run.status != 'completed'" x-text=run.status>
+                                </span>
+                                <span x-text=run.conclusion>
+                                </span>
+                                <span x-text=run.name>
+                                </span>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </template>
+        </div>
+        <a href=https://github.com/markfirmware/audit>
+            markfirmware/audit
+        </a>
+        <div x-data=data() x-init="init([], x => templates = x)">
+            <div>
+                npm search keywords:csa-template
+                <ul>
+                    <template x-for="template in templates" :key=template.package.name>
+                        <div>
+                            <template x-if="Object.entries(template.package.links).length > 1">
+                                <li>
+                                    <span x-text="template.package.name">
+                                    </span>
+                                    <ul>
+                                        <li>
+                                            <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
+                                                <a :href=url x-text=id>
+                                                </a>
+                                            </template>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </template>
+                        </div>
+                    </template>
+                    <template x-for="template in templates" :key=template.package.name>
+                        <div>
+                            <template x-if="Object.entries(template.package.links).length == 1">
+                                <li>
+                                    <span x-text="template.package.name">
+                                    </span>
+                                    <ul>
+                                        <li>
+                                            <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
+                                                <a :href=url x-text=id>
+                                                </a>
+                                            </template>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </template>
+                        </div>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </body>
 </html>
