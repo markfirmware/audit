@@ -3,7 +3,7 @@ name: test svelte-tailwind-snowpack
 on:
   push:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '15 3 * * *'
 
 jobs:
   npm-run-build-templates:
