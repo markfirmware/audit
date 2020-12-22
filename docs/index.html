@@ -143,7 +143,8 @@
                                 <button
                                     :class="{ 'border': true,
                                               'bg-gray-200': true,
-                                              'hover:bg-gray-300': true,
+                                              'hover:bg-gray-300': !(run.status != 'completed' || deleted_run_urls.includes(run.url)),
+                                              'cursor-default': (run.status != 'completed' || deleted_run_urls.includes(run.url)),
                                               'border-gray-400': true,
                                               'line-through': deleted_run_urls.includes(run.url)
                                             }"
