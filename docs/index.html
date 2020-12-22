@@ -102,19 +102,18 @@
             <template x-if="state == 'entered_started'">
                 <div>
                     <input x-model=github_token placeholder="40 character github token">
-                    <template x-if="github_token.length == 40 &&
-                        (state = 'connected_started') &&
-                        connect(github_token, (new_data) => {
-                            login = new_data.login;
-                            state = 'connected';
-                        })">
-                        <div>
+                    <template x-if="github_token.length == 40">
+                        <div x-data x-init="$parent.state = 'connected_started'">
                         </div>
                     </template>
                 </div>
             </template>
             <template x-if="state == 'connected_started'">
-                <div>
+                <div x-data x-init="
+                    connect($parent.github_token, (new_data) => {
+                        $parent.login = new_data.login;
+                        $parent.state = 'connected';
+                    })">
                     connecting ...
                 </div>
             </template>
