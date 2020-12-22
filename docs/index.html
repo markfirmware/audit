@@ -39,11 +39,11 @@
             }
         </script>
         <script>
-            function data() {
+            function csaTemplatesData() {
                 return { templates: [] };
             }
 
-            function init(already, update) {
+            function csaTemplatesInit(already, update) {
                 update(already);
                 fetch("https://registry.npmjs.org/-/v1/search?text=keywords:csa-template&size=10&from=" + already.length)
                     .then((r) => r.json())
@@ -56,13 +56,13 @@
                                     b = y.package.name;
                                 return a == b ? 0 : a < b ? -1 : 1;
                             });
-                            init(bigger, update);
+                            csaTemplatesInit(bigger, update);
                         }
                     });
             }
         </script>
         <script>
-            function githubData() {
+            function bodyData() {
                 return { state: 'entered_started', github_token: '', login: '', runs: [], deleted_run_urls: [], hidden_run_urls: [] };
             }
 
@@ -91,7 +91,7 @@
         </script>
     </head>
     <body class=font-mono>
-        <div x-data=githubData()>
+        <div x-data=bodyData()>
             <div>
                 diagnostics
                 state <span x-text="state">
@@ -101,7 +101,7 @@
             </div>
             <template x-if="state == 'entered_started'">
                 <div>
-                    <input x-model=github_token placeholder="40 character github token">
+                    <input x-model=github_token size=40 placeholder="40 character github token">
                     <template x-if="github_token.length == 40">
                         <div x-data x-init="$parent.state = 'connected_started'">
                         </div>
@@ -120,10 +120,16 @@
             <template x-if="state == 'connected'">
                 <div x-data=runsData() x-init="reloadRuns($parent.github_token, 1, [], (x) => runs = x)">
                     <div>
-                        login <span x-text="$parent.login">
+                        <span class=italic x-text="'careful! using github personal authentication token for user ' + $parent.login">
                         </span>
                     </div>
-                    <button @click="hidden_run_urls = deleted_run_urls.slice(0); reloadRuns($parent.github_token, 1, [], x => runs = x)">
+                    <button
+                        :class="{ 'border': true,
+                                  'bg-gray-200': true,
+                                  'hover:bg-gray-300': true,
+                                  'border-gray-400': true
+                                }"
+                        @click="hidden_run_urls = deleted_run_urls.slice(0); reloadRuns($parent.github_token, 1, [], x => runs = x)">
                         reload runs
                     </button>
                     <ul class=text-yellow-400>
@@ -162,7 +168,7 @@
         <a href=https://github.com/markfirmware/audit>
             markfirmware/audit
         </a>
-        <div x-data=data() x-init="init([], x => templates = x)">
+        <div x-data=csaTemplatesData() x-init="csaTemplatesInit([], x => templates = x)">
             <div>
                 npm search keywords:csa-template
                 <ul>
