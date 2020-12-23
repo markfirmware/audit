@@ -2,216 +2,27 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.5.x/dist/index.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
-        <script note="github login">
-            function bodyData() {
-                return { state: 'token_requested', github_token: '', login: '' };
-            }
-            function connect(token, update) {
-                fetch("https://api.github.com/user", {
-                    headers: {
-                        Authorization: ('token ' + token),
-                        Accept: 'application/vnd.github.v3+json'
-                    }
-                })
-                    .then((r) => r.json())
-                    .then((j) => {
-                        update({ login: j.login });
-                    });
-                return true;
-            }
-        </script>
-        <script note="github action runs">
-            function runsData() {
-                return { runs: [], deleted_run_urls: [], hidden_run_urls: [] };
-            }
-            function reloadRuns(token, page, already, update) {
-                update(already);
-                fetch("https://api.github.com/repos/markfirmware/audit/actions/runs?per_page=100&page=" + page, {
-                    headers: {
-                        Authorization: ('token ' + token),
-                        Accept: 'application/vnd.github.v3+json'
-                    }
-                })
-                    .then((r) => r.json())
-                    .then((j) => {
-                        var batch = j.workflow_runs;
-                        if (batch.length != 0) {
-                            var bigger = already.concat(batch);
-                            bigger.sort((x, y) => {
-                                let a = x.name + x.run_number,
-                                    b = y.name + y.run_number;
-                                return a == b ? 0 : a < b ? 1 : -1;
-                            });
-                            reloadRuns(token, page + 1, bigger, update);
-                        }
-                    });
-            }
-            function deleteRun(token, url, deleted_run_urls) {
-                deleted_run_urls.push(url);
-                console.log("delete", token, url);
-                fetch(url,  {
-                    method: 'DELETE',
-                    headers: {
-                        Authorization: ('token ' + token),
-                        Accept: 'application/vnd.github.v3+json'
-                    }
-                })
-                    .then((r) => {
-                        console.log("delete done " + r.status);
-                    });
-                return true;
-            }
-        </script>
-        <script note="snowpack-create-app templates">
-            function csaTemplatesData() {
-                return { templates: [] };
-            }
-
-            function csaTemplatesInit(already, update) {
-                update(already);
-                fetch("https://registry.npmjs.org/-/v1/search?text=keywords:csa-template&size=10&from=" + already.length)
-                    .then((r) => r.json())
-                    .then((j) => {
-                        var batch = j.objects;
-                        if (batch.length != 0) {
-                            var bigger = already.concat(batch);
-                            bigger.sort((x, y) => {
-                                let a = x.package.name,
-                                    b = y.package.name;
-                                return a == b ? 0 : a < b ? -1 : 1;
-                            });
-                            csaTemplatesInit(bigger, update);
-                        }
-                    });
-            }
-        </script>
     </head>
-    <body class=font-mono>
-        <div x-data=bodyData()>
-            <div note="diagnostics">
-                diagnostics
-                state
-                <span x-text="state">
-                </span>
-                login
-                <span x-text="login">
-                </span>
-            </div>
-            <template x-if="state == 'token_requested'">
-                <div>
-                    <input x-model=github_token size=40 placeholder="40 character github token">
-                    <template x-if="github_token.length == 40">
-                        <div x-data x-init="$parent.state = 'login_requested'">
+    <body>
+        <div x-data="{ state: 'pin_requested' }">
+            <template x-if="state == 'pin_requested'">
+                <div x-data="{ pin_buffer: '' }">
+                    <input x-model=pin_buffer placeholder="4 digit pin">
+                    <template x-if="pin_buffer.length == 4">
+                        <div x-data x-init="$parent.$parent.state = 'pin_entered'">
                         </div>
                     </template>
                 </div>
             </template>
-            <template x-if="state == 'login_requested'">
-                <div x-data x-init="
-                    connect($parent.github_token, (new_data) => {
-                        $parent.login = new_data.login;
-                        $parent.state = 'login_received';
-                    })">
-                    connecting ...
+            <template x-if="state == 'pin_entered'">
+                <div x-data>
+                    <span>
+                        pin entered
+                    </span>
                 </div>
             </template>
-            <template x-if="state == 'login_received'">
-                <div x-data=runsData() x-init="reloadRuns($parent.github_token, 1, [], (x) => runs = x)">
-                    <div>
-                        <span class=italic x-text="'careful! using github personal authentication token for user ' + $parent.login">
-                        </span>
-                    </div>
-                    <button
-                        :class="{ 'border': true,
-                                  'bg-gray-200': true,
-                                  'hover:bg-gray-300': true,
-                                  'border-gray-400': true
-                                }"
-                        @click="hidden_run_urls = deleted_run_urls.slice(0); reloadRuns($parent.github_token, 1, [], x => runs = x)">
-                        reload runs
-                    </button>
-                    <ul class=text-yellow-400>
-                        <template x-for="run in runs" :key=run.run_number>
-                            <li x-show=!hidden_run_urls.includes(run.url)
-                                :class="{ 'line-through': deleted_run_urls.includes(run.url),
-                                          'text-red-400': run.conclusion == 'failure',
-                                          'font-bold': run.conclusion == 'failure',
-                                          'text-green-800': run.conclusion == 'success'
-                                        }">
-                                <button
-                                    :class="{ 'border': true,
-                                              'bg-gray-200': true,
-                                              'hover:bg-gray-300': !(run.status != 'completed' || deleted_run_urls.includes(run.url)),
-                                              'cursor-default': (run.status != 'completed' || deleted_run_urls.includes(run.url)),
-                                              'border-gray-400': true,
-                                              'line-through': deleted_run_urls.includes(run.url)
-                                            }"
-                                    :disabled="run.status != 'completed' || deleted_run_urls.includes(run.url)"
-                                    @click="deleteRun($parent.github_token, run.url, deleted_run_urls)">
-                                    delete
-                                </button>
-                                <span x-text=run.run_number>
-                                </span>
-                                <span x-show="run.status != 'completed'" x-text=run.status>
-                                </span>
-                                <span x-text=run.conclusion>
-                                </span>
-                                <span x-text=run.name>
-                                </span>
-                            </li>
-                        </template>
-                    </ul>
-                </div>
-            </template>
-        </div>
-        <a href=https://github.com/markfirmware/audit>
-            markfirmware/audit
-        </a>
-        <div x-data=csaTemplatesData() x-init="csaTemplatesInit([], x => templates = x)">
-            <div>
-                npm search keywords:csa-template
-                <ul>
-                    <template x-for="template in templates" :key=template.package.name>
-                        <div>
-                            <template x-if="Object.entries(template.package.links).length > 1">
-                                <li>
-                                    <span x-text="template.package.name">
-                                    </span>
-                                    <ul>
-                                        <li>
-                                            <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
-                                                <a :href=url x-text=id>
-                                                </a>
-                                            </template>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </template>
-                        </div>
-                    </template>
-                    <template x-for="template in templates" :key=template.package.name>
-                        <div>
-                            <template x-if="Object.entries(template.package.links).length == 1">
-                                <li>
-                                    <span x-text="template.package.name">
-                                    </span>
-                                    <ul>
-                                        <li>
-                                            <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
-                                                <a :href=url x-text=id>
-                                                </a>
-                                            </template>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </template>
-                        </div>
-                    </template>
-                </ul>
-            </div>
         </div>
     </body>
 </html>
