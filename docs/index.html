@@ -167,27 +167,23 @@
                 </div>
             </template>
         </div>
-        <a href=https://github.com/markfirmware/audit>
+        <a href=https://github.com/markfirmware/audit class=underline>
             markfirmware/audit
         </a>
         <div x-data=csaTemplatesData() x-init="csaTemplatesInit([], x => templates = x)">
             <div>
                 npm search keywords:csa-template
-                <ul>
+                <ul class="list-disc list-inside">
                     <template x-for="template in templates" :key=template.package.name>
                         <div>
                             <template x-if="Object.entries(template.package.links).length > 1">
                                 <li>
                                     <span x-text="template.package.name">
                                     </span>
-                                    <ul>
-                                        <li>
-                                            <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
-                                                <a :href=url x-text=id>
-                                                </a>
-                                            </template>
-                                        </li>
-                                    </ul>
+                                        <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
+                                            <a :href=url class=underline x-text=id>
+                                            </a>
+                                        </template>
                                 </li>
                             </template>
                         </div>
@@ -198,14 +194,10 @@
                                 <li>
                                     <span x-text="template.package.name">
                                     </span>
-                                    <ul>
-                                        <li>
-                                            <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
-                                                <a :href=url x-text=id>
-                                                </a>
-                                            </template>
-                                        </li>
-                                    </ul>
+                                        <template x-for="[id, url] in Object.entries(template.package.links)" :key=id>
+                                            <a :href=url class=underline x-text=id>
+                                            </a>
+                                        </template>
                                 </li>
                             </template>
                         </div>
