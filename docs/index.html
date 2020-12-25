@@ -27,9 +27,11 @@
             function runsData() {
                 return { runs: [], deleted_run_urls: [], hidden_run_urls: [] };
             }
-            function reloadRuns(token, page, already, update) {
-                update(already);
-                fetch("https://api.github.com/repos/markfirmware/audit/actions/runs?per_page=100&page=" + page, {
+            function reloadRuns(token, done) {
+                reloadRunsBatch(token, done, [], 1);
+            }
+            function reloadRunsBatch(token, done, runs_buffer, page_number) {
+                fetch("https://api.github.com/repos/markfirmware/audit/actions/runs?per_page=100&page=" + page_number, {
                     headers: {
                         Authorization: ('token ' + token),
                         Accept: 'application/vnd.github.v3+json'
@@ -39,13 +41,15 @@
                     .then((j) => {
                         var batch = j.workflow_runs;
                         if (batch.length != 0) {
-                            var bigger = already.concat(batch);
-                            bigger.sort((x, y) => {
+                            runs_buffer = runs_buffer.concat(batch);
+                            reloadRunsBatch(token, done, runs_buffer, page_number + 1);
+                        } else {
+                            runs_buffer.sort((x, y) => {
                                 let a = x.name + x.run_number,
                                     b = y.name + y.run_number;
                                 return a == b ? 0 : a < b ? 1 : -1;
                             });
-                            reloadRuns(token, page + 1, bigger, update);
+                            done(runs_buffer);
                         }
                     });
             }
@@ -119,7 +123,7 @@
                 </div>
             </template>
             <template x-if="state == 'login_received'">
-                <div x-data=runsData() x-init="reloadRuns($component('fsm').github_token, 1, [], (x) => runs = x)">
+                <div x-data=runsData() x-init="reloadRuns($component('fsm').github_token, (x) => runs = x)">
                     <div>
                         <span class=italic x-text="'careful! using github personal authentication token for user ' + $component('fsm').login">
                         </span>
@@ -130,7 +134,7 @@
                                   'hover:bg-gray-300': true,
                                   'border-gray-400': true
                                 }"
-                        @click="hidden_run_urls = deleted_run_urls.slice(0); reloadRuns($component('fsm').github_token, 1, [], x => runs = x)">
+                        @click="hidden_run_urls = deleted_run_urls.slice(0); reloadRuns($component('fsm').github_token, (x) => runs = x)">
                         reload runs
                     </button>
                     <ul class=text-yellow-400>
