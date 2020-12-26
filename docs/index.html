@@ -6,7 +6,7 @@
         <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.5.x/dist/index.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
         <script note="github login">
-            function fsmData() {
+            function loginData() {
                 return { state: 'token_requested', github_token: '', login: '' };
             }
             function connect(token, update) {
@@ -27,13 +27,12 @@
             function runsData() {
                 return { runs: [], deleted_run_urls: [], hidden_run_urls: [] };
             }
-            function reloadRuns(token, done) {
-                reloadRunsBatch(token, done, [], 1);
+            function reloadRuns(done) {
+                reloadRunsBatch(done, [], 1);
             }
-            function reloadRunsBatch(token, done, runs_buffer, page_number) {
+            function reloadRunsBatch(done, runs_buffer, page_number) {
                 fetch("https://api.github.com/repos/markfirmware/audit/actions/runs?per_page=100&page=" + page_number, {
                     headers: {
-                        Authorization: ('token ' + token),
                         Accept: 'application/vnd.github.v3+json'
                     }
                 })
@@ -42,7 +41,7 @@
                         var batch = j.workflow_runs;
                         if (batch.length != 0) {
                             runs_buffer = runs_buffer.concat(batch);
-                            reloadRunsBatch(token, done, runs_buffer, page_number + 1);
+                            reloadRunsBatch(done, runs_buffer, page_number + 1);
                         } else {
                             runs_buffer.sort((x, y) => {
                                 let a = x.name + x.run_number,
@@ -94,7 +93,7 @@
         </script>
     </head>
     <body class=font-mono>
-        <div x-id=fsm x-data=fsmData()>
+        <div x-id=login x-data=loginData()>
             <div note="diagnostics">
                 diagnostics
                 state
@@ -106,74 +105,75 @@
             </div>
             <template x-if="state == 'token_requested'">
                 <div x-data>
-                    <input x-model=$component('fsm').github_token size=40 placeholder="40 character github token">
-                    <template x-if="$component('fsm').github_token.length == 40">
-                        <div x-data x-init="$component('fsm').state = 'login_requested'">
+                    <input x-model="$component('login').github_token" size=40 placeholder="40 character github token">
+                    <template x-if="$component('login').github_token.length == 40">
+                        <div x-data x-init="$component('login').state = 'login_requested'">
                         </div>
                     </template>
                 </div>
             </template>
             <template x-if="state == 'login_requested'">
                 <div x-data x-init="
-                    connect($component('fsm').github_token, (new_data) => {
-                        $component('fsm').login = new_data.login;
-                        $component('fsm').state = 'login_received';
+                    connect($component('login').github_token, (new_data) => {
+                        console.log('connect 2');
+                        $component('login').login = new_data.login;
+                        $component('login').state = 'login_received';
                     })">
                     connecting ...
                 </div>
             </template>
             <template x-if="state == 'login_received'">
-                <div x-data=runsData() x-init="reloadRuns($component('fsm').github_token, (x) => runs = x)">
-                    <div>
-                        <span class=italic x-text="'careful! using github personal authentication token for user ' + $component('fsm').login">
-                        </span>
-                    </div>
-                    <button
-                        :class="{ 'border': true,
-                                  'bg-gray-200': true,
-                                  'hover:bg-gray-300': true,
-                                  'border-gray-400': true
-                                }"
-                        @click="hidden_run_urls = deleted_run_urls.slice(0); reloadRuns($component('fsm').github_token, (x) => runs = x)">
-                        reload runs
-                    </button>
-                    <ul class=text-yellow-400>
-                        <template x-for="run in runs" :key=run.run_number>
-                            <li x-show=!hidden_run_urls.includes(run.url)
-                                :class="{ 'line-through': deleted_run_urls.includes(run.url),
-                                          'text-red-400': run.conclusion == 'failure',
-                                          'font-bold': run.conclusion == 'failure',
-                                          'text-green-800': run.conclusion == 'success'
-                                        }">
-                                <button
-                                    :class="{ 'border': true,
-                                              'bg-gray-200': true,
-                                              'hover:bg-gray-300': !(run.status != 'completed' || deleted_run_urls.includes(run.url)),
-                                              'cursor-default': (run.status != 'completed' || deleted_run_urls.includes(run.url)),
-                                              'border-gray-400': true,
-                                              'line-through': deleted_run_urls.includes(run.url)
-                                            }"
-                                    :disabled="run.status != 'completed' || deleted_run_urls.includes(run.url)"
-                                    @click="deleteRun($component('fsm').github_token, run.url, deleted_run_urls)">
-                                    delete
-                                </button>
-                                <span x-text=run.run_number>
-                                </span>
-                                <span x-show="run.status != 'completed'" x-text=run.status>
-                                </span>
-                                <span x-text=run.conclusion>
-                                </span>
-                                <span x-text=run.name>
-                                </span>
-                            </li>
-                        </template>
-                    </ul>
+                <div>
+                    <span class=italic x-text="'careful! using github personal authentication token for user ' + $component('login').login">
+                    </span>
                 </div>
             </template>
         </div>
         <a href=https://github.com/markfirmware/audit class=underline>
             markfirmware/audit
         </a>
+        <div x-data=runsData() x-init="reloadRuns((x) => runs = x)">
+            <button
+                :class="{ 'border': true,
+                            'bg-gray-200': true,
+                            'hover:bg-gray-300': true,
+                            'border-gray-400': true
+                        }"
+                @click="hidden_run_urls = deleted_run_urls.slice(0); reloadRuns((x) => runs = x)">
+                reload runs
+            </button>
+            <ul class=text-yellow-400>
+                <template x-for="run in runs" :key=run.run_number>
+                    <li x-show=!hidden_run_urls.includes(run.url)
+                        :class="{ 'line-through': deleted_run_urls.includes(run.url),
+                                    'text-red-400': run.conclusion == 'failure',
+                                    'font-bold': run.conclusion == 'failure',
+                                    'text-green-800': run.conclusion == 'success'
+                                }">
+                        <button
+                            :class="{ 'border': true,
+                                        'bg-gray-200': true,
+                                        'hover:bg-gray-300': !($component('login').state != 'login_received' || run.status != 'completed' || deleted_run_urls.includes(run.url)),
+                                        'cursor-default': ($component('login').state != 'login_received' || run.status != 'completed' || deleted_run_urls.includes(run.url)),
+                                        'border-gray-400': true,
+                                        'line-through': deleted_run_urls.includes(run.url)
+                                    }"
+                            :disabled="$component('login').state != 'login_received' || run.status != 'completed' || deleted_run_urls.includes(run.url)"
+                            @click="deleteRun($component('login').github_token, run.url, deleted_run_urls)">
+                            delete
+                        </button>
+                        <span x-text=run.run_number>
+                        </span>
+                        <span x-show="run.status != 'completed'" x-text=run.status>
+                        </span>
+                        <span x-text=run.conclusion>
+                        </span>
+                        <span x-text=run.name>
+                        </span>
+                    </li>
+                </template>
+            </ul>
+        </div>
         <div x-data=csaTemplatesData() x-init="csaTemplatesInit([], x => templates = x)">
             <div>
                 npm search keywords:csa-template
