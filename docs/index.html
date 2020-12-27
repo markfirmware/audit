@@ -123,7 +123,7 @@
                 </div>
             </template>
             <template x-if="state == 'login_received'">
-                <div>
+                <div x-data>
                     <span class=italic x-text="'careful! using github personal authentication token for user ' + $component('login').login">
                     </span>
                 </div>
