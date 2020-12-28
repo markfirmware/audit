@@ -7,7 +7,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
         <script note="github login">
             function loginData() {
-                return { state: 'token_requested', github_token: '', login: '' };
+                return { state: 'token_requested', auth_token: '', login: '' };
             }
             function connect(token, update) {
                 fetch("https://api.github.com/user", {
@@ -105,8 +105,8 @@
             </div>
             <template x-if="state == 'token_requested'">
                 <div x-data>
-                    <input x-model="$component('login').github_token" size=40 placeholder="40 character github token">
-                    <template x-if="$component('login').github_token.length == 40">
+                    <input x-model="$component('login').auth_token" size=40 placeholder="40 character auth token">
+                    <template x-if="$component('login').auth_token.length == 40">
                         <div x-data x-init="$component('login').state = 'login_requested'">
                         </div>
                     </template>
@@ -114,8 +114,7 @@
             </template>
             <template x-if="state == 'login_requested'">
                 <div x-data x-init="
-                    connect($component('login').github_token, (new_data) => {
-                        console.log('connect 2');
+                    connect($component('login').auth_token, (new_data) => {
                         $component('login').login = new_data.login;
                         $component('login').state = 'login_received';
                     })">
@@ -159,7 +158,7 @@
                                         'line-through': deleted_run_urls.includes(run.url)
                                     }"
                             :disabled="$component('login').state != 'login_received' || run.status != 'completed' || deleted_run_urls.includes(run.url)"
-                            @click="deleteRun($component('login').github_token, run.url, deleted_run_urls)">
+                            @click="deleteRun($component('login').auth_token, run.url, deleted_run_urls)">
                             delete
                         </button>
                         <a :href="'https://github.com/markfirmware/audit/actions/runs/' + run.id" class=underline>
