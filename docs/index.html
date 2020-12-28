@@ -162,14 +162,16 @@
                             @click="deleteRun($component('login').github_token, run.url, deleted_run_urls)">
                             delete
                         </button>
-                        <span x-text=run.run_number>
-                        </span>
-                        <span x-show="run.status != 'completed'" x-text=run.status>
-                        </span>
-                        <span x-text=run.conclusion>
-                        </span>
-                        <span x-text=run.name>
-                        </span>
+                        <a :href="'https://github.com/markfirmware/audit/actions/runs/' + run.id" class=underline>
+                            <span x-text=run.run_number>
+                            </span>
+                            <span x-show="run.status != 'completed'" x-text=run.status>
+                            </span>
+                            <span x-text=run.conclusion>
+                            </span>
+                            <span x-text=run.name>
+                            </span>
+                        </a>
                     </li>
                 </template>
             </ul>
