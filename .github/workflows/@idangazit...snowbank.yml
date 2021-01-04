@@ -4,7 +4,7 @@ on:
   push:
   schedule:
     - cron: '15 * * * *'
-  workflow_dispatch
+  workflow_dispatch:
 
 jobs:
   npm-run-build-templates:
