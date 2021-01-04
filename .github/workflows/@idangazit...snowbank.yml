@@ -1,4 +1,4 @@
-name: test other snowpack templates
+name: test @idangazit/snowbank
 
 on:
   push:
