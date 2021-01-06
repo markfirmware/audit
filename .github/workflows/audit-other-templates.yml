@@ -3,7 +3,7 @@ name: test other snowpack templates
 on:
   push:
   schedule:
-    - cron: '15 * * * *'
+    - cron: '15 10 * * *'
 
 jobs:
   npm-run-build-templates:
