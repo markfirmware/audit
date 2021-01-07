@@ -105,7 +105,7 @@
             </div>
             <template x-if="state == 'token_requested'">
                 <div x-data>
-                    <input x-model="$component('login').auth_token" size=40 placeholder="40 character auth token">
+                    <input type="password" x-model="$component('login').auth_token" size=40 placeholder="40 character auth token">
                     <template x-if="$component('login').auth_token.length == 40">
                         <div x-data x-init="$component('login').state = 'login_requested'">
                         </div>
