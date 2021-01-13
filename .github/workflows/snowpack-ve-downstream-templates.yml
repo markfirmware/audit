@@ -1,4 +1,4 @@
-name: test other snowpack templates
+name: v3 test other snowpack templates
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
           snowpack-sott,
           snowpack-svelte-ts-tw,
           snowpack-template-tailwind,
-          snowpack-app-template-preact-hmr-tailwind,
+          # snowpack-app-template-preact-hmr-tailwind,
           '@idangazit/snowbank',
           svelte-tailwind-snowpack,
           snowpack-react-tailwind,
