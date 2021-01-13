@@ -12,7 +12,7 @@ jobs:
       matrix:
         template:
           [snowpack-react-tailwind,
-          snowpack-sott,
+          # snowpack-sott,
           snowpack-svelte-ts-tw,
           snowpack-template-tailwind,
           # snowpack-app-template-preact-hmr-tailwind,
