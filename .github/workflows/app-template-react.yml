@@ -1,0 +1,21 @@
+name: test @snowpack/app-template-react
+
+on:
+  push:
+  schedule:
+    - cron: '0/10 * * * *'
+
+jobs:
+  npm-run-build-templates:
+    strategy:
+      matrix:
+        template: [react]
+        os: [macos-latest]
+    runs-on: ${{matrix.os}}
+    steps:
+      - uses: actions/checkout@v2
+      - name: create-snowpack-app
+        run: |
+          npx create-snowpack-app --template @snowpack/app-template-${{matrix.template}} app
+          cd app
+          npm run build
