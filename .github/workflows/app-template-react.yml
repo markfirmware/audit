@@ -3,7 +3,8 @@ name: test @snowpack/app-template-react
 on:
   push:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0/5 * * * *'
+  workflow_dispatch:
 
 jobs:
   npm-run-build-templates:
