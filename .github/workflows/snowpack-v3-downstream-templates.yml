@@ -15,15 +15,13 @@ jobs:
           # snowpack-sott,
           # snowpack-svelte-ts-tw,
           snowpack-template-tailwind,
+          # "svelte-tailwind-snowpack"
           # snowpack-app-template-preact-hmr-tailwind,
           '@idangazit/snowbank',
-          # svelte-tailwind-snowpack,
-          snowpack-react-tailwind,
           "@snowpack/app-template-svelte",
           "@snowpack/app-template-svelte-typescript",
           "@snowpack/app-template-svelte",
-          "@snowpack/app-template-svelte-typescript",
-          # "svelte-tailwind-snowpack"
+          "@snowpack/app-template-svelte-typescript"
           ]
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{matrix.os}}
