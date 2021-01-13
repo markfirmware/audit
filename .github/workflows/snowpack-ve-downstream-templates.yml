@@ -23,7 +23,7 @@ jobs:
           "@snowpack/app-template-svelte-typescript",
           "@snowpack/app-template-svelte",
           "@snowpack/app-template-svelte-typescript",
-          "svelte-tailwind-snowpack"
+          # "svelte-tailwind-snowpack"
           ]
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{matrix.os}}
