@@ -3,7 +3,7 @@ name: continuous audit
 on:
   push:
   schedule:
-    - cron: '0/0 * * * *'
+    - cron: '0/30 * * * *'
   workflow_dispatch:
 
 jobs:
