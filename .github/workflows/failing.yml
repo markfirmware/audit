@@ -1,0 +1,22 @@
+name: test v3 failing
+
+on:
+  push:
+  schedule:
+    - cron: '0/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  npm-run-build-templates:
+    strategy:
+      matrix:
+        template: [svelte-typescript]
+        os: [macos-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{matrix.os}}
+    steps:
+      - uses: actions/checkout@v2
+      - name: create-snowpack-app
+        run: |
+          npx create-snowpack-app --template @snowpack/app-template-${{matrix.template}} app
+          cd app
+          npm run build
