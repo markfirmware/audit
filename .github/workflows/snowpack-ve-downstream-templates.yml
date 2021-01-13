@@ -17,7 +17,7 @@ jobs:
           snowpack-template-tailwind,
           # snowpack-app-template-preact-hmr-tailwind,
           '@idangazit/snowbank',
-          svelte-tailwind-snowpack,
+          # svelte-tailwind-snowpack,
           snowpack-react-tailwind,
           "@snowpack/app-template-svelte",
           "@snowpack/app-template-svelte-typescript",
