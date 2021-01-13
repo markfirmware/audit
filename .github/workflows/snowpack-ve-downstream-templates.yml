@@ -1,0 +1,36 @@
+name: test other snowpack templates
+
+on:
+  push:
+  schedule:
+    - cron: '15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  npm-run-build-templates:
+    strategy:
+      matrix:
+        template:
+          [snowpack-react-tailwind,
+          snowpack-sott,
+          snowpack-svelte-ts-tw,
+          snowpack-template-tailwind,
+          snowpack-app-template-preact-hmr-tailwind,
+          '@idangazit/snowbank',
+          svelte-tailwind-snowpack,
+          snowpack-react-tailwind,
+          "@snowpack/app-template-svelte",
+          "@snowpack/app-template-svelte-typescript",
+          "@snowpack/app-template-svelte",
+          "@snowpack/app-template-svelte-typescript",
+          "svelte-tailwind-snowpack"
+          ]
+        os: [macos-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{matrix.os}}
+    steps:
+      - uses: actions/checkout@v2
+      - name: create-snowpack-app
+        run: |
+          npx create-snowpack-app --template ${{matrix.template}} app
+          cd app
+          npm run build
