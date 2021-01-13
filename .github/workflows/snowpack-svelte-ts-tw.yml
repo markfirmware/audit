@@ -1,4 +1,4 @@
-name: snowpack v3 test snowpack-sott template
+name: snowpack v3 test snowpack-svelte-ts-tw template
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     strategy:
       matrix:
         template:
-          [snowpack-sott]
+          [snowpack-svelte-ts-tw]
         os: [macos-latest, ubuntu-latest, windows-latest]
     runs-on: ${{matrix.os}}
     steps:
