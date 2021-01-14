@@ -3,7 +3,7 @@ name: snowpack v3 test snowpack-sott template
 on:
   push:
   schedule:
-    - cron: '15 * * * *'
+    - cron: '0/15 * * * *'
   workflow_dispatch:
 
 jobs:
