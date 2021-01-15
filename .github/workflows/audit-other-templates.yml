@@ -3,7 +3,7 @@ name: test other snowpack templates
 on:
   push:
   schedule:
-    - cron: '0/30 * * * *'
+    - cron: '30/30 * * * *'
 
 jobs:
   npm-run-build-templates:
@@ -11,6 +11,7 @@ jobs:
       matrix:
         template:
           [snowpack-react-tailwind,
+          snowpack-sott,
           snowpack-svelte-ts-tw,
           snowpack-template-tailwind,
           # snowpack-app-template-preact-hmr-tailwind,
