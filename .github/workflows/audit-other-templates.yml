@@ -3,7 +3,7 @@ name: test other snowpack templates
 on:
   push:
   schedule:
-    - cron: '30 1/2 * * *'
+    - cron: '30 1 * * *'
   workflow_dispatch:
 
 jobs:
